@@ -8,6 +8,7 @@ Created on Mon Nov 20 18:16:05 2017
 # PIL and python ###
 # Store base magnification information in the meta file and generates the tiles #
 # Prepare tiles for processing using multiprocessing support on a regular cpu # 
+# Author contact mail id priya.narayanan@icr.ac.uk ###
 
 import openslide
 import os
