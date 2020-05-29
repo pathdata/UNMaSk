@@ -130,6 +130,6 @@ class IMNet:
         if lr is None:
             lr = self.LearningRate
         with tf.name_scope('Optimization'):
-            train_op = tf.train.AdagradOptimizer(learning_rate=lr).minimize(loss)
+            train_op = tf.train.AdamOptimizer(learning_rate=lr).minimize(loss)
 
         return train_op
