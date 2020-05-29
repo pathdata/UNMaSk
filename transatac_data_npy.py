@@ -4,7 +4,8 @@ Created on Wed May 23 07:16:11 2018
 
 @author: priya.narayanan@icr.ac.uk
 """
-
+##### Data preparation to be fed to the network #########
+##### De-identify image names with the numerals #########
 
 import os
 import numpy as np
@@ -13,13 +14,12 @@ from skimage.io import imsave, imread
 from skimage import io
 import cv2
 
-#data_path = 'D://DL_challenge//unet-master//unet-master//unet1//backup//dicom//'
+
 
 data_path = 'HE_Data\\'#folder name containing unet_traindata
 
 
-#image_rows = 600
-#image_cols = 600
+
 image_rows = 512
 image_cols = 512
 
@@ -69,10 +69,7 @@ def create_train_data():
     print(imgs[10].shape)
     print(imgs_mask[10].shape)
     #io.imshow(imgs_mask[10])
-    #print('imgs_test.npy',imgs)
-#    print('imgs_test.npy',imgs.shape)
-#    print('imgs_test.npy',imgs[0].shape)
-#    print('imgs_test.npy',imgs[134].shape)
+   
     np.save('he_imgs_train.npy', imgs)
     np.save('he_imgs_mask_train.npy', imgs_mask)
     print('Saving to .npy files done.')
