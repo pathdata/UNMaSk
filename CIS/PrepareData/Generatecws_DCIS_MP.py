@@ -8,7 +8,7 @@ Created on Mon Nov 20 18:16:05 2017
 # PIL and python ###
 # Store base magnification information in the meta file and generates the tiles #
 # Prepare tiles for processing using multiprocessing support on a regular cpu # 
-# Author contact mail id priya.narayanan@icr.ac.uk ###
+# Author id priya.narayanan@icr.ac.uk ###
 
 import openslide
 import os
@@ -158,12 +158,12 @@ class Generatecws(object):
 
 
 if __name__ == '__main__':
-    params  = {'input_dir':r'Y:\vk_Backup\DCIS_Duke\data\raw\5thbatch', ########### input dir of whole slide images
-               'output_dir':r'Y:\vk_Backup\DCIS_Duke\data\cws\5thbatch',########### cws dir of tiles
-               'ext':'.svs',
-               'num_processes':6,
-               'exp_dir': '',
-			   'objective_power': 20,
+    params  = {'input_dir':r'D:\data\raw\5thbatch', ########### input directory of whole slide images
+               'output_dir':r'D:\data\cws\5thbatch',########### output directory of tiles # we call it img_tile/cws 
+               'ext':'.svs',                        ########### file format specification
+               'num_processes':6,                   ########### number of processes
+               'exp_dir': '',            
+			   'objective_power': 20,   ########### Slide resolution (in this project I had all images scanned at 20X)
                'slide_dimension': [],
 			   'rescale': 1,
 			   'cws_objective_value': 20,
