@@ -1,8 +1,9 @@
-#Understanding Data preparation for object detection models 
+###Understanding Data preparation for object detection models 
 
 In this section we will summarize the organization of directory struture to enable the end user extract the information needed to directly train the object detection models.
 
 CIS
+ |
  |
  +-- PrepareData
  |    
