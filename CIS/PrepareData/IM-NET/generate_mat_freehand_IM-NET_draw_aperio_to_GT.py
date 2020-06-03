@@ -186,8 +186,8 @@ class GenerateWSIannotation_on_cws(object):
 # Author : priya.narayanan@icr.ac.uk
 # Latest modified Date : 01-May-2020
 if __name__ == '__main__':
-    params  = {'input_slide_dir': r'D:\UNET_Experiments\Morisita_Invasive\test_svs',             # input slide dir
-               'output_dir': r'D:\UNET_Experiments\Morisita_Invasive\SVS_annotations_20X',       # output dir 1.img_mask,2.Mat_files
+    params  = {'input_slide_dir': r'D:\test_svs',             # input slide dir
+               'output_dir': r'D:\SVS_annotations_20X',       # output dir 1.img_mask,2.Mat_files
                'ext':'.svs',
                }
     obj = GenerateWSIannotation_on_cws(**params)
