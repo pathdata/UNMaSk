@@ -6,7 +6,7 @@ In this section we will summarize the organization of directory struture to enab
 
 <p align="center">
   <img src="training_material/tree_structure.png" width="350"/>
-  <img src="training_material/tree_svs_demo.png" width="350"/>
+  <img src="training_material/tree_svs_demo.PNG" width="350"/>
 </p>
 
  
