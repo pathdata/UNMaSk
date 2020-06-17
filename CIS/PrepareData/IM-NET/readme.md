@@ -15,8 +15,8 @@ Note: In general WSI images are high in memory. Corresponding Authors of the pub
 1. Visualization
 
 <p align="center">
-  <img src="training_material/svs_freehand.png" width="350"/>
-  <img src="training_material/ndpi_freehand.PNG" width="350"/>
+  <img src="training_material/T3_svs.png" width="450"/>
+  <img src="training_material/cmu-1_ndpi.png" width="450"/>
 </p>
 
  
