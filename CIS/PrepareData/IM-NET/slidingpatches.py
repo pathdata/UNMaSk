@@ -238,9 +238,9 @@ class Slidingpatches:
 
 
 if __name__=='__main__':
-    data_path = '/Users/hzhang/Documents/from_proj4/MoNuSAC/data/MoNuSAC_images_and_annotations'
-    label_path = '/Users/hzhang/Documents/from_proj4/MoNuSAC/data/binary_masks'
-    save_path = '/Users/hzhang/Documents/from_proj4/MoNuSAC/data/tfrecords_binary'
+    data_path = 'rPath for images and annotations'
+    label_path = 'rPath for labels'
+    save_path = 'rPath for tfrecords'
     train_filename = 'Train_binary'
     # valid_filename = 'Valid_binary'
     # test_filename = 'Test_binary'
