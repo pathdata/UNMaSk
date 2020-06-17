@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<annotation>
+  <folder>images</folder>
+  <filename>T2Da_0237_2.jpg</filename>
+  <filename>D:\TF_TISSUE\HE_Tissue_seg\img\T2Da_0237_2.jpg</filename>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>500</width>
+    <height>500</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>none</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>396</xmin>
+      <ymin>221</ymin>
+      <xmax>500</xmax>
+      <ymax>478</ymax>
+    </bndbox>
+  </object>
+</annotation>

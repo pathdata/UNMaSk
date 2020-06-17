@@ -9,6 +9,10 @@ In this section we will summarize the organization of directory struture to enab
   <img src="training_material/tree_svs_demo.PNG" width="350"/>
 </p>
 
+<p align="center">
+  <img src="training_material/train_square_demo.png" width="350"/>
+  <img src="training_material/train_svs_demo.png" width="350"/>
+</p>
  
                             
 Square raw directory contains the whole slide images and the respective annotations.
