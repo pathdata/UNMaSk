@@ -329,10 +329,10 @@ def printProgressBar (iteration, total, prefix='', suffix='', decimals=1, length
 
 if __name__ == '__main__':
     opts = {
-        #'save_path': pathlib.Path(r'P:\DCIS_Duke_Faranak\HDD\Final_IHC_model\Data\1103202020-NewdataforTF\combine_mat_P&N\curated\cv2'),
-        #'main_file_path': pathlib.Path(r'P:\DCIS_Duke_Faranak\HDD\Final_IHC_model\Data\1103202020-NewdataforTF\combine_mat_P&N\curated\cv2\AugData-20200315'),
-        #'train_filename': 'TrainData-IHC-CV2',
-        #'valid_filename': 'ValidData-IHC-CV2'
+        #'save_path': pathlib.Path(r'P:\DCIS_Duke\cv2'),
+        #'main_file_path': pathlib.Path(r'P:\DCIS_Duke\cv2\AugData-20200315'),
+        #'train_filename': 'TrainData-HE-CV2',
+        #'valid_filename': 'ValidData-HE-CV2'
 
         }
 
