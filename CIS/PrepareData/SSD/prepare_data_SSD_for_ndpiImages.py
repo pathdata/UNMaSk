@@ -224,7 +224,7 @@ class GenerateWSI_squareannotation_on_cws(object):
 if __name__ == '__main__':
     params  = {'input_slide_dir': r'D:/TF_TISSUE/HE_Tissue_seg/square_raw',                  # input slide dir
                'output_dir': r'D:/TF_TISSUE/HE_Tissue_seg/square_annotation',                # output dir 1.img_mask,2.Mat_files
-               'ext':'.ndpi',                                                                 # ext: '.svs'
+               'ext':'.ndpi',                                                                 # ext: '.ndpi'
                }
     obj = GenerateWSI_squareannotation_on_cws(**params)
     obj.generate_patch_of_annotated_tiles()
