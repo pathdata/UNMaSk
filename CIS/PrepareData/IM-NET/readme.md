@@ -12,24 +12,20 @@ For demo purpose, I will use a CMU-1.ndpi downloaded from the following web link
 Note: In general WSI images are high in memory. Corresponding Authors of the publication can be contacted to see if the WSI can be made available if they are not part of any sensitive clinical trial information.
  
 
-1. parseCIS
+1. Visualization
 
 <p align="center">
-  <img src="training_material/tree_structure.png" width="350"/>
-  <img src="training_material/tree_svs_demo.PNG" width="350"/>
+  <img src="training_material/svs_freehand.png" width="350"/>
+  <img src="training_material/ndpi_freehand.PNG" width="350"/>
 </p>
 
-<p align="center">
-  <img src="training_material/train_square_demo.png" width="350"/>
-  <img src="training_material/train_svs_demo.png" width="350"/>
-</p>
  
                             
 Square raw directory contains the whole slide images and the respective annotations.
 Square annotation directory contains 
-    1. positive example 
-    2. negative example 
-    3.rectangle annotations overlayed on the image for visualisation.
+    1. positive example saved in Mat_files/pos directory
+    2. negative example saved in Mat_files
+    3. Gt.im is the original cws patch and GT.Mask contains the manual segmentation mask.
 	
 
 Summary
