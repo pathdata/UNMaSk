@@ -250,9 +250,9 @@ class GenerateWSIannotation_on_cws(object):
 # Author : priya.narayanan@icr.ac.uk
 # Latest modified Date : 01-May-2020
 if __name__ == '__main__':
-    params  = {'input_slide_dir': r'D:\TF_TISSUE\HE_Tissue_seg\testndpi',             # input slide dir
-               'output_dir': r'D:\TF_TISSUE\HE_Tissue_seg\ndpi_annotations_20X',       # output dir 1.img_mask,2.Mat_files
-               'ext':'.ndpi',
+    params  = {'input_slide_dir': r'D:\TF_TISSUE\HE_Tissue_seg\testsvs',              # input slide dir
+               'output_dir': r'D:\TF_TISSUE\HE_Tissue_seg\svs_annotations_20X',       # output dir 1.img_mask,2.Mat_files
+               'ext':'.svs',                                                          # WSI format
                }
 
     obj = GenerateWSIannotation_on_cws(**params)
