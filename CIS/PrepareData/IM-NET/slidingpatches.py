@@ -4,6 +4,9 @@ from glob import glob
 import math
 from PIL import Image
 
+
+### Class supports any RGB image ###
+
 class Slidingpatches:
     def __init__(self, img_patch_h, img_patch_w, stride_h=1, stride_w=1, label_patch_h=None, label_patch_w=None):
         assert img_patch_h > 0, 'Height of Image Patch should be greater than 0'
