@@ -203,11 +203,6 @@ def train_and_predict():
 
 if __name__ == '__main__':
 
-    # M = get_Inception_unet()
-    # print(M.summary())
-
-
-
     H = train_and_predict()
     plt.style.use("seaborn-white")
     plt.figure()
