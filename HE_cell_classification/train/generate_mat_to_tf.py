@@ -145,7 +145,7 @@ def run(opts_in):
 
 if __name__ == '__main__':
     opts = {
-        'save_tf_path': pathlib.Path(r'D:\2019_Grant_Proposal\npj\testHE\tfrecord'),
+        'save_tf_path': pathlib.Path(r'D:\npj\testHE\tfrecord'),
         'main_input_path': pathlib.Path(r'D:\Priya_FDrive\Training_HE\partition\Data_HE8'),
         'train_tf_filename': 'TrainData-HE-2019-11',
         'valid_tf_filename': 'ValidData-HE-2019-11'
