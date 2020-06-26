@@ -1,3 +1,13 @@
+#Cell classification pipeline for HE images, constituted 4 classes
+# Dependant packages and environment for cell classification are listed below
+# Cuda 10, cudnn 7.4.1
+# pip install opencv-python
+# pip install openslide-python
+# pip install pandas
+# pip install tensorflow-gpu==1.13.1
+# pip install keras==2.2.4
+# set up matlab engine ('https://uk.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html')
+
 import tensorflow as tf
 import scipy.io as sio
 import os
@@ -145,10 +155,10 @@ def run(opts_in):
 
 if __name__ == '__main__':
     opts = {
-        'save_tf_path': pathlib.Path(r'D:\npj\testHE\tfrecord'),
-        'main_input_path': pathlib.Path(r'D:\Priya_FDrive\Training_HE\partition\Data_HE8'),
-        'train_tf_filename': 'TrainData-HE-2019-11',
-        'valid_tf_filename': 'ValidData-HE-2019-11'
+        'save_tf_path': pathlib.Path(r'D:\npj\testHE\tfrecord'),                             # tf_record directory
+        'main_input_path': pathlib.Path(r'D:\Priya_FDrive\Training_HE\partition\Data_HE8'),  # mat directory containing training and vaiidation
+        'train_tf_filename': 'TrainData-HE-2019-11',                                         # tf_record_train_file_name
+        'valid_tf_filename': 'ValidData-HE-2019-11'                                          # tf_record_valid_file_name
     }
 
     run(opts_in=opts)
