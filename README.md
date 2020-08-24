@@ -2,8 +2,8 @@
 
 # Overview schematic of UNMaSk pipeline for DCIS segmentation.
 <p align="center">
-  <img src="environment/Fig1_overview.png" width="350" height="350"/>
-  <img src="environment/Fig2_ab_Revised_v1.png" width="350" height="350"/>
+  <img src="environment/Fig1_overview.png" width="450" height="450"/>
+  <img src="environment/Fig2_ab_Revised_v1.png" width="450" height="450"/>
   
 </p>
 
