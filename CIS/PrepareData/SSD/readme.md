@@ -20,3 +20,5 @@ Square annotation directory contains
     1. positive example 
     2. negative example 
     3.rectangle annotations overlayed on the image for visualisation.
+
+#Visualisation of the square annotations
