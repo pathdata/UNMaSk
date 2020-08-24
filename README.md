@@ -3,7 +3,7 @@
 # Overview schematic of UNMaSk pipeline for DCIS segmentation.
 <p align="center">
   
-  <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_img_movie_001.gif" width="250" height="250"/>
+  <img src="environment/Fig1_DL_overview.tif" width="350" height="350"/>
   
 </p>
 
