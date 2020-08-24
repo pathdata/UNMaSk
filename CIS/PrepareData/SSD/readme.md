@@ -21,8 +21,8 @@ Square annotation directory contains
     2. negative example 
     3.rectangle annotations overlayed on the image for visualisation.
 
-#Visualisation of the square annotations
+# Visualisation of the square annotations as regions of individual tiles from the whole slide images
 <p align="center">
   <img src="training_material/test_square_annotaions_DCIS_movie.gif" width="350" height="350"/>
 </p>
-#![]("training_material/test_square_annotations_DCIS_movie.gif) 
+
