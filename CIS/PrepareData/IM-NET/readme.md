@@ -35,9 +35,7 @@ Summary
 4. Annotation supporting two whole slide image formats are provided here.
 
 # Visualisation of randomly sampled images with free hand annotations on tiled images  
-
 <p align="center">
-  
   <img src="training_material/DCIS_freehand_sampled_pos_img_movie_001.gif" width="250" height="250"/>
   <img src="training_material/DCIS_freehand_sampled_pos_mask_movie_001.gif" width="250" height="250"/>
   <img src="training_material/DCIS_freehand_sampled_pos_overlay_movie_001.gif" width="250" height="250"/>
