@@ -37,5 +37,5 @@ Summary
 # Visualisation of randomly sampled images with free hand annotations on tiled images  
 
 <p align="center">
-  <img src="training_material/test_square_annotaions_DCIS_movie.gif" width="350" height="350"/>
+  <img src="training_material/DCIS_freehand_sampled_pos_overlay_movie_001.gif" width="350" height="350"/>
 </p>
