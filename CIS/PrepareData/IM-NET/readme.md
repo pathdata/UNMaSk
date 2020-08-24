@@ -9,7 +9,7 @@ extracting them we could export to any co-ordinate system and custom-built packa
 
 For demo purpose, I have used a CMU-1.ndpi downloaded from the following web link (http://openslide.cs.cmu.edu/download/openslide-testdata/Hamamatsu/)
  
-Note: In general WSI images are high in memory. Corresponding Authors of the publication can be contacted to see if the WSI can be made available if they are not part of any sensitive clinical trial information.
+Note: In general WSI images are high in memory. Corresponding Authors of the publication can be contacted to see if the WSI can be made available. Please check the Data availability section of the manuscript to find out more.
  
 
 1. Visualization
