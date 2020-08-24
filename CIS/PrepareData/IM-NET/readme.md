@@ -37,6 +37,8 @@ Summary
 # Visualisation of randomly sampled images with free hand annotations on tiled images  
 
 <p align="center">
-  <img src="training_material/DCIS_freehand_sampled_pos_overlay_movie_001.gif" width="350" height="350"/>
+  
   <img src="training_material/DCIS_freehand_sampled_pos_img_movie_001.gif" width="350" height="350"/>
+  <img src="training_material/DCIS_freehand_sampled_pos_mask_movie_001.gif" width="350" height="350"/>
+  <img src="training_material/DCIS_freehand_sampled_pos_overlay_movie_001.gif" width="350" height="350"/>
 </p>
