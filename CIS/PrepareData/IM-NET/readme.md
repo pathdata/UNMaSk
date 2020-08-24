@@ -38,4 +38,5 @@ Summary
 
 <p align="center">
   <img src="training_material/DCIS_freehand_sampled_pos_overlay_movie_001.gif" width="350" height="350"/>
+  <img src="training_material/DCIS_freehand_sampled_pos_overlay_movie_001.gif" width="350" height="350"/>
 </p>
