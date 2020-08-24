@@ -33,3 +33,9 @@ Summary
 2. Extract the free hand vertices.
 3. Save the binary mask for processing.
 4. Annotation supporting two whole slide image formats are provided here.
+
+# Visualisation of randomly sampled images with free hand annotations on tiled images  
+
+<p align="center">
+  <img src="training_material/test_square_annotaions_DCIS_movie.gif" width="350" height="350"/>
+</p>
