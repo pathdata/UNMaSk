@@ -23,5 +23,5 @@ Square annotation directory contains
 
 #Visualisation of the square annotations
 <p align="center">
-  <img src="training_material/test_square_annotations_DCIS_movie.gif" width="350"/>
+  <img src="training_material/test_square_annotations_DCIS_movie.gif" width="350" height="350"/>
  </p>
