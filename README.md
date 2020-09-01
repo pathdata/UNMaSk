@@ -12,17 +12,25 @@
   </p>
 
 # Training Data
-Training images
+
+Images used for training
 https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData
+
+Ground truth images
+https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData/mask
 
 Overlay of groundtruth on the training image
 https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData/overlay
+
+# Illustrative images used in training IM-NET
+
 <p align="center">
   
   <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_img_movie_001.gif" width="250" height="250"/>
   <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_mask_movie_001.gif" width="250" height="250"/>
   <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_overlay_movie_001.gif" width="250" height="250"/>
 </p>
+
 
 
 # Reference
