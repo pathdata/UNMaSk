@@ -11,7 +11,12 @@
   <img src="environment/Fig2_ab_Revised_v1.png" width="450" height="450"/>
   </p>
 
+# Training Data
+Training images
+https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData
 
+Overlay of groundtruth on the training image
+https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData/overlay
 <p align="center">
   
   <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_img_movie_001.gif" width="250" height="250"/>
