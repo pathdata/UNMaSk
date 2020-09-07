@@ -2,12 +2,11 @@ import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-#import seaborn as sns
-#from  configs import cell_type_map_dict, setFigureObjectProperties
+
 
 from scipy.stats import ttest_ind
 
-#setFigureObjectProperties()
+
 
 def computeCombinedMorisita(input_dir, output_dir=None, save_fig=False):
     
@@ -161,12 +160,12 @@ def getRegionMorisita(in_1, in_2):
     return morisita_index
 
 
-def run_1():
+def compute_morisita():
 
-    output_dir_home = r'D:\DCIS_2019\Morisita_DL_DuctSegm_results\2019_PureDCIS_Morisita'
-    input_dir_home = r'D:\DCIS_2019\Morisita_DL_DuctSegm_results\2019_PureDCIS_Voronoi'
+    output_dir_home = r'D:\DCIS_2019\PureDCIS_Morisita'
+    input_dir_home = r'D:\DCIS_2019\PureDCIS_Voronoi'
     computeSlideLevelMorisita(input_dir_home, output_dir=output_dir_home,  save_fig=True)
 
 
 if __name__=='__main__':
-    run_1()
+    compute_morisita()
