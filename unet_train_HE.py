@@ -40,6 +40,67 @@ def load_train_data():
     imgs_mask_train = np.load('he_imgs_mask_train.npy')
     return imgs_train, imgs_mask_train
 
+def conv2d_block(input_tensor, n_filters, kernel_size=3, batchnorm=True):
+    # first layer
+    x = Conv2D(filters=n_filters, kernel_size=(kernel_size, kernel_size), kernel_initializer="he_normal",
+               padding="same")(input_tensor)
+    if batchnorm:
+        x = BatchNormalization()(x)
+    x = Activation("relu")(x)
+    # second layer
+    x = Conv2D(filters=n_filters, kernel_size=(kernel_size, kernel_size), kernel_initializer="he_normal",
+               padding="same")(x)
+    if batchnorm:
+        x = BatchNormalization()(x)
+    x = Activation("relu")(x)
+    return x
+
+
+def get_unet_2b(input_img, n_filters=16, dropout=0.5, batchnorm=True):
+    # contraction path
+    conv1 = conv2d_block(input_img, n_filters=n_filters * 1, kernel_size=3, batchnorm=batchnorm)
+    pool1 = MaxPooling2D((2, 2))(conv1)
+    pool1 = Dropout(dropout * 0.5)(pool1)
+
+    conv2 = conv2d_block(pool1, n_filters=n_filters * 2, kernel_size=3, batchnorm=batchnorm)
+    pool2 = MaxPooling2D((2, 2))(conv2)
+    pool2 = Dropout(dropout)(pool2)
+
+    conv3 = conv2d_block(pool2, n_filters=n_filters * 4, kernel_size=3, batchnorm=batchnorm)
+    pool3 = MaxPooling2D((2, 2))(conv3)
+    pool3 = Dropout(dropout)(pool3)
+
+    conv4 = conv2d_block(pool3, n_filters=n_filters * 8, kernel_size=3, batchnorm=batchnorm)
+    pool4 = MaxPooling2D(pool_size=(2, 2))(conv4)
+    pool4 = Dropout(dropout)(pool4)
+
+    conv5 = conv2d_block(pool4, n_filters=n_filters * 16, kernel_size=3, batchnorm=batchnorm)
+
+    # expansion path
+    up6 = Conv2DTranspose(n_filters * 8, (3, 3), strides=(2, 2), padding='same')(conv5)
+    up6 = concatenate([up6, conv4])
+    up6 = Dropout(dropout)(up6)
+    conv6 = conv2d_block(up6, n_filters=n_filters * 8, kernel_size=3, batchnorm=batchnorm)
+
+    up7 = Conv2DTranspose(n_filters * 4, (3, 3), strides=(2, 2), padding='same')(conv6)
+    up7 = concatenate([up7, conv3])
+    up7 = Dropout(dropout)(up7)
+    conv7 = conv2d_block(up7, n_filters=n_filters * 4, kernel_size=3, batchnorm=batchnorm)
+
+    up8 = Conv2DTranspose(n_filters * 2, (3, 3), strides=(2, 2), padding='same')(conv7)
+    up8 = concatenate([up8, conv2])
+    up8 = Dropout(dropout)(up8)
+    conv8 = conv2d_block(up8, n_filters=n_filters * 2, kernel_size=3, batchnorm=batchnorm)
+
+    up9 = Conv2DTranspose(n_filters * 1, (3, 3), strides=(2, 2), padding='same')(conv8)
+    up9 = concatenate([up9, conv1], axis=3)
+    up9 = Dropout(dropout)(up9)
+    conv9 = conv2d_block(up9, n_filters=n_filters * 1, kernel_size=3, batchnorm=batchnorm)
+
+    outputs = Conv2D(1, (1, 1), activation='sigmoid')(conv9)
+    model = Model(inputs=[input_img], outputs=[outputs])
+    return model
+
 def get_unet():
     
     inputs = Input((img_rows, img_cols,3))
