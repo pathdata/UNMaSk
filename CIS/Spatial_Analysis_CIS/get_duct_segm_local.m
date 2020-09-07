@@ -1,9 +1,9 @@
 function[ ] = get_duct_segm_local(  )
-%Create whole-slide duct segmentation mask and ecologial ROI
+%Create whole-slide duct segmentation mask and ecological ROI
 
 imagesPath='DCIS_Duke/Data/cws/';                %cws
-cellClassPath = 'DL_Class_Results/20180131/csv/';%cellclassification_csv
-ductSegmPath = 'DL_DuctSegm/20180104/mat/';      %mat
+cellClassPath = 'DL_Class_Results/20200131/csv/';%cellclassification_csv
+ductSegmPath = 'DL_DuctSegm/20200104/mat/';      %mat
 outputPath = 'Duct_Eco/Duct_Segm/';              %output
 
 folders = dir(fullfile(imagesPath, 'DCIS*'));
