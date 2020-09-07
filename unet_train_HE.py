@@ -9,9 +9,7 @@ from keras.optimizers import Adam
 from keras.callbacks import ModelCheckpoint
 from keras import backend as K
 
-#from poet_data_npy import load_train_data
-#from unet_train_data import load_test_data
-#from data import *
+
 import matplotlib.pyplot as plt
 
 
