@@ -12,10 +12,10 @@ import os
 
 
 
-im_dir = r'D:/DCIS_2019/Morisita_DL_DuctSegm_results/2019_PureDCIS_Tissuemask'
-voronoi_dir = r'D:/DCIS_2019/Morisita_DL_DuctSegm_results/2019_PureDCIS_Voronoi'
-cells_dir = r'D:/DCIS_2019/Morisita_DL_DuctSegm_results/2019_PureDCIS_cellPos_csv'
-# cmap = plt.set_cmap('Reds')
+im_dir = r'D:/DCIS_2019/PureDCIS_Tissuemask'
+voronoi_dir = r'D:/DCIS_2019/PureDCIS_Voronoi'
+cells_dir = r'D:/DCIS_2019/PureDCIS_cellPos_csv'
+
 
 def computevoronoicellcount(cell_names):
 
