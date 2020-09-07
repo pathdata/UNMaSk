@@ -1,4 +1,4 @@
-# Extracted free hand annotations are part of TrainData for IM-NET.
+# Extracted free hand annotations of TrainData used for training IM-NET.
 
 Training data used from two cohorts before augmentation are saved and these annotations will be augmented as we will be collecting more of these in future.
 
