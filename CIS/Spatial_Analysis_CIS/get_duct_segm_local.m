@@ -79,6 +79,7 @@ for i=1:length(folders)
     L(bwdist(slide_mask)>duct_nbh_size) = 0;
     
     save(fullfile(outputPath, strcat(folders{i}, '_ducts.mat')), 'slide_mask', 'L')
+    imwrite(L,fullfile(outputPath, strcat(folders{i}, '_ducts.jpg')))
     %rgb = label2rgb(L,'jet',[.5 .5 .5]);
     
 end
