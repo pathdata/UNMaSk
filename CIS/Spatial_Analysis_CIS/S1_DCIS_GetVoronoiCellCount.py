@@ -41,7 +41,7 @@ def computevoronoicellcount(cell_names):
         for i in range(len(voronoi_data)):
             poly_vertices = voronoi_data['voronoi_{}'.format(i)]
 
-            polygon_cell_count_df = getCellCountInsidePolygone(df=cell_pos_df,
+            polygon_cell_count_df = getCellCountInsidePolygon(df=cell_pos_df,
                                                                poly_vert=poly_vertices)
             counts = ['voronoi_{}'.format(i)]
             for cell_name in cell_names:
@@ -55,7 +55,7 @@ def computevoronoicellcount(cell_names):
         slide_cell_count_df.to_csv(os.path.join(voronoi_dir, os.path.splitext(file_name)[0]+'.jpg', 'voronoi_cell_count.csv'), index=False)
 
 
-def getCellCountInsidePolygone(df, poly_vert):
+def getCellCountInsidePolygon(df, poly_vert):
     polygon = Polygon(poly_vert)
 
     is_inside_polygon = df.apply(lambda row: polygon.contains(Point(row['x'], row['y'])), axis=1)
