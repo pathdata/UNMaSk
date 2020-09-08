@@ -20,7 +20,6 @@ import matplotlib.pyplot as plt
 from keras import backend as K
 smooth = 1.
 
-
 def dice_coef(y_true, y_pred):
     y_true_f = K.flatten(y_true)
     y_pred_f = K.flatten(y_pred)
@@ -30,7 +29,6 @@ def dice_coef(y_true, y_pred):
 
 def dice_coef_loss(y_true, y_pred):
     return 1 - dice_coef(y_true, y_pred)
-
 
 
 def plot_training_curves(output_dir, H, epochs):
@@ -57,7 +55,6 @@ def plot_training_curves(output_dir, H, epochs):
     plt.ylabel("Accuracy")
     plt.legend()
     plt.savefig(os.path.join(output_dir, str(epochs) + 'HE_100_BU_Accuracy.png'))
-
 
 def inception_block(input_tensor, num_filters):
 
@@ -133,12 +130,8 @@ def train_and_predict(batch_size, epochs):
     X_train = X_train.astype('float32')
     y_train = np.load('Train_HE/he_imgs_mask_train.npy')
 
-
-
-
     y_train = y_train.astype('float32')
     y_train /= 255.  # scale masks to [0, 1]
-
 
     X_valid = np.load('Train_HE/imgs_valid.npy')
     X_valid = X_valid.astype('float32')
@@ -146,15 +139,12 @@ def train_and_predict(batch_size, epochs):
     y_valid = y_valid.astype('float32')
     y_valid /= 255.  # scale masks to [0, 1]
 
-
     print('-' * 30)
     print('Creating and compiling model...')
     print('-' * 30)
 
     model = get_Inception_unet()
     model.summary()
-
-
     model.compile(optimizer=Adam(), loss=["binary_crossentropy"], metrics=["accuracy"])
     callbacks = [
         EarlyStopping(patience=40, verbose=1),
@@ -182,14 +172,12 @@ def train_and_predict(batch_size, epochs):
     print("img_mask_valid=", y_valid.shape)
 
 
-
     H = model.fit(X_train, y_train, batch_size=batch_size, epochs=epochs, callbacks=callbacks,
                   validation_data=(X_valid, y_valid))
 
     print("finished...")
 
     return H
-
 
 if __name__=="__main__":
 
