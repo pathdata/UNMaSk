@@ -4,9 +4,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 import tensorflow as tf
-print(tf.__version__)
+print(tf.__version__)    #1.10.0
 import keras
-print(keras.__version__)
+print(keras.__version__) #2.2.4
 from keras.models import Model, load_model
 from keras.layers import Input, BatchNormalization, Activation, Dense, Dropout
 from keras.layers.core import Lambda, RepeatVector, Reshape
