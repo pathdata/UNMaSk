@@ -5,7 +5,7 @@ In this section we will summarize how we parse the freehand annotations drawn on
 Imagescope is a generic open source tool, available for performing annotation on WSI images.
 
 It is important to know how to extract the regions and the vertices that form these free-hand annotations. Once we are comfortable
-extracting them we could export to any co-ordinate system and custom-built packages.
+extracting them we could export to any co-ordinate system and can be parsed to the training algorithms.
 
 For demo purpose, I have used a CMU-1.ndpi downloaded from the following web link (http://openslide.cs.cmu.edu/download/openslide-testdata/Hamamatsu/)
  
