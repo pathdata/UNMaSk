@@ -75,7 +75,7 @@ if __name__ == '__main__':
 
     params = {
                 'cws_folder' : os.path.normpath(r'D:\TF_TISSUE\HE_Tissue_seg\test_stitch_low_res\cws'),
-                'annotated_dir' : r"D:\TF_TISSUE\HE_Tissue_seg\test_stitch_low_res\mask",
+                'annotated_dir' : r'D:\TF_TISSUE\HE_Tissue_seg\test_stitch_low_res\mask',
                 'output_dir' : r'D:\TF_TISSUE\HE_Tissue_seg\test_stitch_low_res\low_res',
                 'scale' : 16
                }
