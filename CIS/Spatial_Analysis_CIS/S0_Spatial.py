@@ -257,10 +257,10 @@ class Spatial_data_extract_S1(object):
 if __name__ == '__main__':
 
 
-    params = {'input_slide_dir': r'D:\UNET_Experiments\voronoi_DUKE\Images',      # input slide SS1_dir
-              'obj_dir': r'D:\UNET_Experiments\voronoi_DUKE\obj_mask',            # DCIS output mask from matlab
-              'tissue_mask_dir': r'D:\UNET_Experiments\voronoi_DUKE\Tissue_mask', # tissuemask
-              'output_dir': r'D:\UNET_Experiments\voronoi_DUKE',                  # output dir
+    params = {'input_slide_dir': r'D:\voronoi_DUKE\Images',      # input slide SS1_dir
+              'obj_dir': r'D:\voronoi_DUKE\obj_mask',            # DCIS output mask from matlab
+              'tissue_mask_dir': r'D:\voronoi_DUKE\Tissue_mask', # tissuemask
+              'output_dir': r'D:\voronoi_DUKE',                  # output dir
               'ext': '.jpg',
               }
 
