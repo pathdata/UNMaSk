@@ -1,6 +1,6 @@
 # Understanding Data preparation from Whole slide images (WSI)
 
-Digitalization of histopathology slides allows the use of powerful deep learning algorithms integration and it can be further used as a tool in the diagnostic process to make a more precise assessments. To achieve them we need to tools that can support data preparation. Recent literature has highlighted on the need on creating powerful database for the tissue types. One such article is cited in the reference section below.
+Digitalization of histopathology slides allows the use of powerful deep learning algorithms integration and it can be further used as a tool in the diagnostic process to make a more precise assessments. To achieve them we need tools that can support data preparation. Our tool supports the annotation of WSI made in Aperio and Hamamatsu images. Recent literature has highlighted on the need on creating powerful database for the tissue types. One such article is cited in the reference section below.
 
 In this section we will summarize how we parse the freehand annotations drawn on WSI to train the CIS detection models.
 
