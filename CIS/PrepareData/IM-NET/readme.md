@@ -1,8 +1,10 @@
 # Understanding Data preparation from Whole slide images (WSI)
 
+Digitalization of histopathology slides allows the use of powerful deep learning algorithms integration and it can be further used as a tool in the diagnostic process to make a more precise assessments. To achieve them we need to tools that can support data preparation. Recent literature has highlighted on the need on creating powerful database for the tissue types. One such article is cited in the reference section below.
+
 In this section we will summarize how we parse the freehand annotations drawn on WSI to train the CIS detection models.
 
-Imagescope is a generic open source tool, available for performing annotation on WSI images.
+For our demonstration, we have used Imagescope which is a generic open source tool, available for performing annotation on WSI images.
 
 It is important to know how to extract the regions and the vertices that form these free-hand annotations. Once we are comfortable
 extracting them we could export to any co-ordinate system and can be parsed to the training algorithms.
