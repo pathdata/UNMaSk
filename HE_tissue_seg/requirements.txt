@@ -2,7 +2,7 @@ python==3.6
 numpy==1.14.5
 keras-gpu==2.2.4                        
 keras-preprocessing==1.0.5     
-tensorflow-gpu==1.10.0
+tensorflow-gpu==1.15.2
 tensorboard==1.10.0               
 matplotlib==3.0.2
 Pillow==5.4.1
