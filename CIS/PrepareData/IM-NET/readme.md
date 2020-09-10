@@ -42,11 +42,4 @@ Summary
 </p>
 
 # Reference
-@article{lindman2019annotations,
-  title={Annotations, ontologies, and whole slide images--Development of an annotated ontology-driven whole slide image library of normal and abnormal human tissue},
-  author={Lindman, Karin and Rose, Jer{\'o}mino F and Lindvall, Martin and Lundstr{\"o}m, Claes and Treanor, Darren},
-  journal={Journal of Pathology Informatics},
-  volume={10},
-  year={2019},
-  publisher={Wolters Kluwer--Medknow Publications}
-}
+Lindman, K., Rose, J.F., Lindvall, M., Lundström, C. and Treanor, D., 2019. Annotations, ontologies, and whole slide images–Development of an annotated ontology-driven whole slide image library of normal and abnormal human tissue. Journal of Pathology Informatics, 10.
