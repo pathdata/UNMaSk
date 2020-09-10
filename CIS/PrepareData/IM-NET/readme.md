@@ -40,3 +40,13 @@ Summary
   <img src="training_material/DCIS_freehand_sampled_pos_mask_movie_001.gif" width="250" height="250"/>
   <img src="training_material/DCIS_freehand_sampled_pos_overlay_movie_001.gif" width="250" height="250"/>
 </p>
+
+# Reference
+@article{lindman2019annotations,
+  title={Annotations, ontologies, and whole slide images--Development of an annotated ontology-driven whole slide image library of normal and abnormal human tissue},
+  author={Lindman, Karin and Rose, Jer{\'o}mino F and Lindvall, Martin and Lundstr{\"o}m, Claes and Treanor, Darren},
+  journal={Journal of Pathology Informatics},
+  volume={10},
+  year={2019},
+  publisher={Wolters Kluwer--Medknow Publications}
+}
