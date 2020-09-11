@@ -5,9 +5,8 @@
 
 <p align="center">
   
-  <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_img_movie_001.gif" width="250" height="250"/>
-  <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_mask_movie_001.gif" width="250" height="250"/>
-  <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_overlay_movie_001.gif" width="250" height="250"/>
+  <img src="Train_HE/test_param_screenshot.png" width="250" height="250"/>
+ 
 </p>
 
 # Citation
