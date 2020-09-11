@@ -1,11 +1,12 @@
 # UNMaSk: Unmasking the immune microecology of ductal carcinoma in situ with deep learning.
 
 
-# Illustrative images used in training IM-NET
+# command arguments for tissue segmentation pipeline
+
 
 <p align="center">
   
-  <img src="Train_HE/test_param_screenshot.png" width="250" height="250"/>
+  <img src="Train_HE/test_param_screenshot.png" width="450" height="450"/>
  
 </p>
 
