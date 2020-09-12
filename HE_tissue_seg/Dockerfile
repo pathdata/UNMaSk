@@ -1,5 +1,5 @@
 FROM tensorflow/tensorflow:1.10.0-gpu-py3
-MAINTAINER YEMAN <yeman.hagos@cruk.cam.ac.uk>
+MAINTAINER YEMAN <yeman.hagos@icr.ac.uk>
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 run apt-get update && apt-get install --no-install-recommends -y \
 	libsm6 \
