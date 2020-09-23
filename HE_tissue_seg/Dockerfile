@@ -10,7 +10,7 @@ run apt-get update && apt-get install --no-install-recommends -y \
 # Python        #
 #################
 RUN pip install --upgrade pip
-COPY requirements_updated.txt requirements.txt
+COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 #### Setup code and directories
