@@ -193,7 +193,7 @@ def get_Inception_unet(weights_path=None):
     b8 = Conv2D(1, (1, 1), activation='sigmoid')(b7)
 
     model = Model(inputs=[input_tensor], outputs=[b8])
-    model.compile(optimizer=Adam(lr=1e-4), loss=[dice_coef_loss], metrics=["accuracy", dice_coef])
+    model.compile(optimizer=Adam(lr=1e-4), loss=[ModHausdorffDist], metrics=["accuracy", dice_coef])
 
     if weights_path:
         model.load_weights(weights_path)
