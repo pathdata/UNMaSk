@@ -9,12 +9,13 @@ python main.py --batch_size=4 --epochs=100 --mode=train
 
 Command line arguments for Prediction
 
-python main.py --model=model_HE_Inception_unet --test=Test --result=output --mode=test
+python main.py --model=model_HE_Inception_unet --test=TestImages --result=output --mode=test
 
 --mode=WSI_test---> To directly run prediction on WSI image
 For main_WSI.py
 command line arguments example
-python main_WSI.py --model=model_HE_Inception_unet --test=Test --result=output --mode=WSI_test
+
+python main_WSI.py --model=model_HE_Inception_unet --test=WSI --result=output --mode=WSI_test
 
 Running tissue segmentation
 usage: main.py [-h] [-model MODEL] [-test TEST] [-result RESULT] [-mode MODE]
