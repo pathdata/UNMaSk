@@ -6,6 +6,7 @@ Add the WSI images in this directory and run the code main_WSI.py with the respe
 # --model=model_HE_Inception_unet --test=Test --result=output --mode=WSI_test
 
 Running tissue segmentation
+
 usage: main.py [-h] [-model MODEL] [-test TEST] [-result RESULT] [-mode MODE]
                [-bs BATCH_SIZE] [-epochs EPOCHS]
 
