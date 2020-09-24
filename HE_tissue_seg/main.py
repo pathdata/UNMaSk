@@ -6,8 +6,8 @@ from scripts.train_HE_BLInception_unet import *
 #import openslide
 
 # command line usage arguments
-# --model=model_HE_Inception_unet --test=Test --result=output --mode=test
-# --bs=4 --epochs=100 --mode=train
+# python main.py --model=model_HE_Inception_unet --test=Test --result=output --mode=test
+# python main.py --bs=4 --epochs=100 --mode=train
 
 if __name__=='__main__':
 
