@@ -164,7 +164,7 @@ class DetectCells(object):
                 label = np.zeros(im_pad.shape[:2])
                 if self.normalization == 'regular':
                     im_pad = im_pad * 1.0 / 255
-                elif self.normalization == 'centeral':
+                elif self.normalization == 'central':
                     im_pad = (im_pad - 128) * 1.0 / 128
                 else:
                     pass
