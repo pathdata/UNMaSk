@@ -39,7 +39,9 @@ optional arguments:
   `-epochs EPOCHS, --epochs EPOCHS            total number of epochs`
 
 
+# Docker Container
 
+```docker://nrypri001docker/tf:tsv1 ```
 
 
 # Citation
