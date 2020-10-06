@@ -16,7 +16,7 @@ For main_WSI.py
 command line arguments example
 
 
-python main_WSI.py --model=model_HE_Inception_unet --test=WSI --result=output --mode=WSI_test
+`python main_WSI.py --model=model_HE_Inception_unet --test=WSI --result=output --mode=WSI_test`
 
 Running tissue segmentation
 usage: main.py [-h] [-model MODEL] [-test TEST] [-result RESULT] [-mode MODE]
