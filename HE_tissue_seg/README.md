@@ -15,6 +15,8 @@ python main.py --model=model_HE_Inception_unet --test=TestImages --result=output
 For main_WSI.py
 command line arguments example
 
+`One-Line Box made with Backticks`
+
 python main_WSI.py --model=model_HE_Inception_unet --test=WSI --result=output --mode=WSI_test
 
 Running tissue segmentation
