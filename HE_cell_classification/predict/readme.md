@@ -5,3 +5,6 @@ Cells are trained using Supervised CNN and the ensemble classification determine
 Cell class used for classification are epithelial cell, stromal cell, lymphocyte and other cell. The color codes are present in the `HE_Fib_Lym_Tum_Others.csv`.
 
 Please reference the citation if the code is used completely or partially in your work.
+
+# Docker container
+docker://nrypri001docker/tf1p4:IHCv1 
