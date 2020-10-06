@@ -7,15 +7,6 @@ import time
 from datetime import datetime
 import scipy.io as sio
 
-# from subpackages import NetworkOptions
-# opts = NetworkOptions.NetworkOptions()
-# import sccnn_classifier
-# Network = sccnn_classifier.SccnnClassifier(batch_size=opts.batch_size,
-#                                            image_height=opts.image_height,
-#                                            image_width=opts.image_width,
-#                                            in_feat_dim=opts.in_feat_dim,
-#                                            in_label_dim=opts.in_label_dim,
-#                                            num_of_classes=opts.num_of_classes)
 
 
 def run_training(network, opts):
