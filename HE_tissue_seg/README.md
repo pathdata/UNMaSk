@@ -24,7 +24,7 @@ usage: main.py [-h] [-model MODEL] [-test TEST] [-result RESULT] [-mode MODE]
 
 optional arguments:
 
-  `-h, --help            show this help message and exit`
+  `-h, --help                          show this help message and exit`
   
   `-model MODEL, --model MODEL         path to the model`
                         
@@ -32,8 +32,7 @@ optional arguments:
                         
   `-result RESULT, --result RESULT     path to predicted result images`
                         
-  `-mode MODE, --mode MODE             train or predict To perform prediction on test images'
-                                       `prediction mode is set to test`
+  `-mode MODE, --mode MODE             train or predict To perform prediction on test images prediction mode called by setting mode flag to test`
                         
   `-bs BATCH_SIZE, --batch_size BATCH_SIZE    batch size of training images`
                         
