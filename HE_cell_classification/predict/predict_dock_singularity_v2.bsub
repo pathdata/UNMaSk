@@ -39,7 +39,7 @@ echo "**************************************************************************
 singularity exec --nv \
 	--bind "$home_dir:$home_dir" \
 	docker://nrypri001docker/tf1p4:IHCv1 \
-	/usr/local/bin/python /mnt/scratch/users/molecpath/pnarayan/2020_ENS_HE_CellClassification/predict_HE.py -exp_dir $exp_dir -data_dir $data_dir -results_dir $results_dir \
+	/usr/local/bin/python $home_dir/predict_HE.py -exp_dir $exp_dir -data_dir $data_dir -results_dir $results_dir \
 	-detection_results_path $detection_results_path -tissue_segment_dir $tissue_segment_dir -file_name_pattern $file_name_pattern -cluster $cluster
 
 echo "DONE!!"
