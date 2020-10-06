@@ -5,7 +5,7 @@
 
 Command line arguments for Training
 
-python main.py --batch_size=4 --epochs=100 --mode=train
+```python main.py --batch_size=4 --epochs=100 --mode=train```
 
 Command line arguments for Prediction
 
