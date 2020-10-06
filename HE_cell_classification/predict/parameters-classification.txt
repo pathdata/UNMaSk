@@ -1,0 +1,6 @@
+exp_dir ExpDir-TA-DUKE
+results_dir classification_results_HE
+file_name_pattern *.svs
+date 20171013
+in_feat_dim 3
+detection_results_path detection_DAVE

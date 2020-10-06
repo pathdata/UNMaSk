@@ -1,0 +1,44 @@
+#*************** job configuration*****************************************
+
+#BSUB -J "TF_HE"
+#BSUB -P DMPYXYAAN
+#BSUB -q yuangpu
+#BSUB -e test.%J.%I.errors
+#BSUB -o test.%J.%I.outputs
+#BSUB -W 10:00
+#BSUB -R "rusage[ngpus_excl_p=1]"
+#BSUB -u priya.narayanan@icr.ac.uk
+
+#**************************** input / output directories and parameters *****************
+
+home_dir=/mnt/scratch/users/molecpath/pnarayan/2020_ENS_HE_CellClassification
+exp_dir=/mnt/scratch/users/molecpath/pnarayan/2020_ENS_HE_CellClassification/ExpDir-TA-Duke/checkpoint
+data_dir=/mnt/scratch/users/molecpath/pnarayan/2020_ENS_HE_CellClassification/cws_DAVE
+results_dir=/mnt/scratch/users/molecpath/pnarayan/2020_ENS_HE_CellClassification/classification_results_HE
+detection_results_path=/mnt/scratch/users/molecpath/pnarayan/2020_ENS_HE_CellClassification/detection_DAVE
+tissue_segment_dir=/mnt/scratch/users/molecpath/pnarayan/2020_ENS_HE_CellClassification/detection_DAVE_TS
+file_name_pattern=*.svs
+cluster=True
+
+echo "*************Printing time and other details ****************************"
+
+echo "LSB_BATCH_JID:" ${LSB_BATCH_JID}
+echo "current working directory:" ${PWD}
+#echo "created on:" $(date '+%Y-%m-%d')
+
+echo "created by:$USER"
+echo "created on: $(date)"
+
+#echo "output_dir:$output_dir"
+#echo "input_dir:$input_dir"
+
+echo "********************************************************************************"
+
+#**************************** job execution using singularity container *************************
+
+singularity exec --nv \
+	--bind "$home_dir:$home_dir" \
+	docker://nrypri001docker/tf1p4:IHCv1 python /mnt/scratch/users/molecpath/pnarayan/2020_ENS_HE_CellClassification/predict_HE.py -exp_dir $exp_dir -data_dir $data_dir -results_dir $results_dir \
+	-detection_results_path $detection_results_path -tissue_segment_dir $tissue_segment_dir -file_name_pattern $file_name_pattern -cluster $cluster
+
+echo "DONE!!"

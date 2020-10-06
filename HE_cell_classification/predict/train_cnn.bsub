@@ -1,0 +1,11 @@
+#BSUB -J "Train-HE-S-classify"
+#BSUB -P gpu-service
+#BSUB -q yuangpu
+#BSUB -e Train.%J.errors
+#BSUB -o Train.%J.output
+#BSUB -W 250:00
+#BSUB -R "rusage[ngpus_excl_p=1]"
+#BSUB -u priya.narayanan@icr.ac.uk
+source /apps/anaconda/3/5.1.0/etc/profile.d/conda.sh
+conda activate tfDavrosGPU1p4
+python Train_Network_Main.py
