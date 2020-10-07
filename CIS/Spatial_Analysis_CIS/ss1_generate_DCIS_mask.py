@@ -27,9 +27,9 @@ def get_SS1_dimension_image_from_cws_resolution(cws_folder,annotated_dir,output_
     if os.path.exists(output_dir) is False:
         os.makedirs(output_dir)
 
-    for i in range(0, len(wsi_files)):
+    for wsi in range(0, len(wsi_files)):
 
-        filename = wsi_files[i]
+        filename = wsi_files[wsi]
 
         param = pickle.load(open(os.path.join(filename, 'param.p'), 'rb'))
 
@@ -45,9 +45,9 @@ def get_SS1_dimension_image_from_cws_resolution(cws_folder,annotated_dir,output_
         print('%s, Ss1 size: %i,%i'%(os.path.basename(filename),w,h))
         img_all = np.zeros((h, w, 3))
 
-        drivepath, imagename = os.path.split(wsi_files[i])
-        annotated_dir = os.path.join(annotated_dir, imagename)
-        images = sorted(os.listdir(annotated_dir), key=natural_key)
+        drivepath, imagename = os.path.split(wsi_files[wsi])
+        annotated_dir_i = os.path.join(annotated_dir, imagename)
+        images = sorted(os.listdir(annotated_dir_i), key=natural_key)
         printProgressBar(0, len(images), prefix='Progress:', suffix='Complete', length=50)
 
         for i in images:
@@ -59,7 +59,7 @@ def get_SS1_dimension_image_from_cws_resolution(cws_folder,annotated_dir,output_
             w_i = int(w_i / scale)
             # print(cws_i, w_i, h_i)
 
-            img = cv2.imread(os.path.join(annotated_dir,i))
+            img = cv2.imread(os.path.join(annotated_dir_i,i))
 
             img = cv2.resize(img, (int(img.shape[1]/16), int(img.shape[0]/16)))
 
