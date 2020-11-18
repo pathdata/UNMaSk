@@ -93,6 +93,48 @@ def get_Inception_unet(weights_path=None):
 
     return model
 
+def generate_tissue_seg_mat(labelt, mask_w1, mask_h1, result_dir, img_name, tile_size):
+
+    height, width = mask_h1, mask_w1
+    img = labelt
+
+    n = len(img_name)
+    file_name = img_name[0:n - 8]
+
+    if not os.path.isdir(os.path.join(result_dir, 'mat', file_name)):
+        os.makedirs(os.path.join(result_dir, 'mat', file_name))
+
+    k = 0
+    for i in range(0, height, tile_size):
+        for j in range(0, width, tile_size):
+
+            if (j + tile_size > width):
+                w = width - j
+
+            else:
+                w = tile_size
+
+            if (i + tile_size > height):
+                h = height - i
+
+            else:
+                h = tile_size
+
+            cropped = img[i:i + h, j:j + w]
+            img_bw = cv2.findNonZero(cropped)
+
+            if not img_bw is None:
+                # print ('Da'+str(k))
+                # Mat files which has sufficient tissue are saved for tissue segmentation  as a mat file
+                # these mat files are saved to be used for cell segmentation and cell classification
+                sio.savemat(result_dir + '//mat' + '//' + file_name + '//' + 'Da' + str(k) + '.mat', {'output': cropped})
+
+            else:
+                pass
+                # Mat files which has no tissue are not saved for tissue segmentation
+                # print ('Da'+str(k))
+
+            k = k + 1
 
 # %%%
 
@@ -111,6 +153,10 @@ def predict_tissue(model,test_image_path,result_dir):
 
     if os.path.exists(os.path.join(result_dir, "predmask_full_img")) is False:
         os.makedirs(os.path.join(result_dir, "predmask_full_img"))
+    
+    if os.path.exists(os.path.join(result_dir, "mat")) is False:
+        os.makedirs(os.path.join(result_dir, "mat"))
+
 
     model = get_Inception_unet(os.path.join(model,'model-tissue-seg.h5'))
     model.summary()
@@ -176,6 +222,11 @@ def predict_tissue(model,test_image_path,result_dir):
 
             cv2.imwrite(os.path.join(result_dir, "pred_full_img", img_name), prob_image_smooth)
             cv2.imwrite(os.path.join(result_dir, "probability_img", img_name), dst)
+            mask_h1, mask_w1 = labelt.shape
+            tile_size = 125
+            ds = 16
+
+            generate_tissue_seg_mat(labelt, mask_w1, mask_h1, result_dir, img_name, tile_size)
         else:
             continue
 
