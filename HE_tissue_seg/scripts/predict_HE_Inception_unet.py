@@ -8,7 +8,7 @@ from keras.layers import Input, concatenate, Conv2D, Conv2DTranspose, BatchNorma
 from keras import backend as K
 
 import cv2
-
+import scipy.io as sio
 import re
 
 from scripts.slidingpatches import *
