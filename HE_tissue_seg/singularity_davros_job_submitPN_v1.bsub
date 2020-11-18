@@ -1,0 +1,49 @@
+#*************** job configuration*****************************************
+
+#BSUB -J "TS"
+#BSUB -P DMPYXYAAN
+#BSUB -q yuangpu
+#BSUB -e /mnt/scratch/users/molecpath/pnarayan/2020_tf_tsv1/Logs/test.%J.%I.errors
+#BSUB -o mnt/scratch/users/molecpath/pnarayan/2020_tf_tsv1/Logs/test.%J.%I.outputs
+#BSUB -W 250:00
+#BSUB -R "rusage[ngpus_excl_p=1]"
+#BSUB -u priya.narayanan@icr.ac.uk
+
+#**************************** input and output directories*****************
+
+model=$HOME/2020_tf_tsv1/model_HE_Inception_unet_args
+test=$HOME/2020_tf_tsv1/test/HE
+result=$HOME/2020_tf_tsv1/test_result
+
+#data="$HOME/MYELOMA/CD/data/training_data"
+#images="$HOME/MYELOMA/data/PREINVASIVE/tiles"
+#output="$HOME/MYELOMA/CD/data/models/200407"
+
+echo "*************Printing time and other details ****************************"
+
+echo "LSB_BATCH_JID:" ${LSB_BATCH_JID}
+echo "current working directory:" ${PWD}
+#echo "created on:" $(date '+%Y-%m-%d')
+echo "created by:$USER"
+echo "created on: $(date)"
+
+echo "model:$model"
+#echo "images:$images"
+echo "result:$result"
+
+echo "********************************************************************************"
+
+#**************************** job execution using singularity container *************************
+
+if [ -z "$LSB_JOBINDEX" ]
+then
+    echo "make sure to specify bsub job as LSB job arrays "
+    exit 1;
+fi
+
+singularity exec --nv \
+	--bind $(readlink $HOME/2020_tf_tsv1/):$(readlink $HOME/2020_tf_tsv1/) docker://nrypri001docker/tf:tsv1  \
+	/bin/bash --norc --noprofile -c "
+	 echo "Executing singularity"
+	 /usr/local/bin/python $HOME/2020_tf_tsv1/predict_HE_Inception_unet.py --model $model --test $test --result $result -n ${LSB_JOBINDEX}
+	"	
