@@ -15,9 +15,6 @@ model=$HOME/2020_tf_tsv1/model_HE_Inception_unet_args
 test=$HOME/2020_tf_tsv1/test/HE
 result=$HOME/2020_tf_tsv1/test_result
 
-#data="$HOME/MYELOMA/CD/data/training_data"
-#images="$HOME/MYELOMA/data/PREINVASIVE/tiles"
-#output="$HOME/MYELOMA/CD/data/models/200407"
 
 echo "*************Printing time and other details ****************************"
 
@@ -45,5 +42,5 @@ singularity exec --nv \
 	--bind $(readlink $HOME/2020_tf_tsv1/):$(readlink $HOME/2020_tf_tsv1/) docker://nrypri001docker/tf:tsv1  \
 	/bin/bash --norc --noprofile -c "
 	 echo "Executing singularity"
-	 /usr/local/bin/python $HOME/2020_tf_tsv1/predict_HE_Inception_unet.py --model $model --test $test --result $result -n ${LSB_JOBINDEX}
+	 /usr/local/bin/ $HOME/2020_tf_tsv1/predict_HE_Inception_unet.py --model $model --test $test --result $result -n ${LSB_JOBINDEX}
 	"	
