@@ -7,4 +7,5 @@ Cell class used for classification are epithelial cell, stromal cell, lymphocyte
 Please reference the citation if the code is used completely or partially in your work.
 
 # Docker container
-docker://nrypri001docker/tf1p4:IHCv1 
+Tensorflow GPU container -> docker://nrypri001docker/tf1p4:IHCv1
+Tensorflow CPU container -> docker://nrypri001docker/tfcpu:HEv1
