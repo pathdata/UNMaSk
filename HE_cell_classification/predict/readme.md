@@ -14,6 +14,9 @@ Tensorflow GPU container -> docker://nrypri001docker/tf1p4:IHCv1
 # Docker image for CPU environment
 Tensorflow CPU container -> docker://nrypri001docker/tfcpu:HEv1
 
+# Publicly accessible webpage for cpu environment
+https://hub.docker.com/r/nrypri001docker/tfcpu
+
 # Parameters for prediction of classification
 
 #exp_dir-> checkpoint_path                        
