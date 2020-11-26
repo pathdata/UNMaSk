@@ -3,9 +3,9 @@
 #BSUB -J "TS"
 #BSUB -P DMPYXYAAN
 #BSUB -q yuangpu
-#BSUB -e /mnt/scratch/users/molecpath/pnarayan/2020_tf_tsv1/Logs/test.%J.%I.errors
-#BSUB -o mnt/scratch/users/molecpath/pnarayan/2020_tf_tsv1/Logs/test.%J.%I.outputs
-#BSUB -W 250:00
+#BSUB -e test.%J.%I.errors
+#BSUB -o test.%J.%I.outputs
+#BSUB -W 50:00
 #BSUB -R "rusage[ngpus_excl_p=1]"
 #BSUB -u priya.narayanan@icr.ac.uk
 
