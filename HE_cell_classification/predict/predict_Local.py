@@ -22,7 +22,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 
 
-opts = NetworkOptions.NetworkOptions(exp_dir=r'ExpDir-TA-Duke\checkpoint',
+opts = NetworkOptions.NetworkOptions(exp_dir=r'ExpDir-TA-Duke\checkpoint',#args.exp_dir
                                      num_examples_per_epoch_train=1,
                                      num_examples_per_epoch_valid=1,
                                      image_height=51,
@@ -31,13 +31,13 @@ opts = NetworkOptions.NetworkOptions(exp_dir=r'ExpDir-TA-Duke\checkpoint',
                                      in_label_dim=1,
                                      num_of_classes=4,
                                      batch_size=100,
-                                     data_dir=r'cws_DAVE',
-                                     results_dir=r'classification_results_HE',
-                                     detection_results_path=r'detection_DAVE',
-                                     tissue_segment_dir=r'detection_DAVE_TS',
+                                     data_dir=r'cws_DAVE',#args.data_dir
+                                     results_dir=r'classification_results_HE', #args.results_dir
+                                     detection_results_path=r'detection_DAVE', #args.detection_results_path
+                                     tissue_segment_dir=r'detection_DAVE_TS',  #args.tissue_segment_dir
                                      preprocessed_dir=None,
                                      current_epoch_num=0,
-                                     file_name_pattern='*.svs',
+                                     file_name_pattern='*.svs', #args.file_name_pattern
                                      pre_process=False,
                                      color_code_file='HE_Fib_Lym_Tum_Others.csv')
 
