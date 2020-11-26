@@ -1,5 +1,5 @@
 import os
-#from parse_arguments import get_parsed_arguments
+from parse_arguments import get_parsed_arguments
 
 from classifier.sccnn_classifier import SccnnClassifier
 from classifier.subpackages import NetworkOptions
@@ -18,7 +18,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 ################################################################################################
 
-
+args = get_parsed_arguments()
 
 
 
