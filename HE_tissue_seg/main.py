@@ -6,8 +6,8 @@ from scripts.train_HE_BLInception_unet import *
 #import openslide
 
 # command line usage arguments
-# python main.py --model=model_HE_Inception_unet --test=Test --result=output --mode=test
-# python main.py --bs=4 --epochs=100 --mode=train
+#  main.py --model=model_HE_Inception_unet --test=TestImages --result=output 
+#  main.py --bs=4 --epochs=100 --mode=train
 
 if __name__=='__main__':
 
@@ -32,7 +32,7 @@ if __name__=='__main__':
         epochs = args.epochs
 
         H = train(args.batch_size, args.epochs)
-        plot_training_curves(output_dir='./history', H=H, epochs=epochs)
+        plot_training_curves(output_dir='./', H=H, epochs=epochs)
 
 
 
