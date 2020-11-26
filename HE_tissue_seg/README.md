@@ -9,7 +9,7 @@ Command line arguments for Training
 
 Command line arguments for Prediction
 
-` main.py --model=model_HE_Inception_unet --test=TestImages --result=output --mode=test`
+` main.py --model=model_HE_Inception_unet --test=TestImages --result=output `
 
 --mode=WSI_test---> To directly run prediction on WSI image
 For main_WSI.py
