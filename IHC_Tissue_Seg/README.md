@@ -9,14 +9,14 @@ Command line arguments for Training
 
 Command line arguments for Prediction
 
-` main.py --model=model_HE_Inception_unet --test=TestImages --result=output `
+` main.py --model=model_IHC_Inception_unet --test=TestImages --result=output `
 
 --mode=WSI_test---> To directly run prediction on WSI image
 For main_WSI.py
 command line arguments example
 
 
-` main_WSI.py --model=model_HE_Inception_unet --test=WSI --result=output --mode=WSI_test`
+` main_WSI.py --model=model_IHC_Inception_unet --test=WSI --result=output --mode=WSI_test`
 
 Running tissue segmentation
 usage: main.py [-h] [-model MODEL] [-test TEST] [-result RESULT] [-mode MODE]
