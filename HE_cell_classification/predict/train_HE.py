@@ -11,7 +11,7 @@ from classifier.subpackages import NetworkOptions
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
-opts = NetworkOptions.NetworkOptions(exp_dir=os.path.normpath(os.path.join(os.getcwd(), 'ExpDir-POET-S')),
+opts = NetworkOptions.NetworkOptions(exp_dir=os.path.normpath(os.path.join(os.getcwd(), 'ExpDir--S')),
                                      num_examples_per_epoch_train=1,
                                      num_examples_per_epoch_valid=1,
                                      image_height=51,
@@ -45,8 +45,8 @@ Network = SccnnClassifier(batch_size=opts.batch_size,
                                            num_of_classes=opts.num_of_classes,
                                            tf_device=opts.tf_device)
 
-copyfile('Train_Network_Main.py', os.path.join(opts.exp_dir, 'code', 'Train_Network_Main.py'))
-copyfile('Generate_Output_TA.py', os.path.join(opts.exp_dir, 'code', 'Generate_Output.py'))
+copyfile('Train_HE.py', os.path.join(opts.exp_dir, 'code', 'Train_Network_Main.py'))
+copyfile('predict_Local.py', os.path.join(opts.exp_dir, 'code', 'Generate_Output.py'))
 copytree('classifier', os.path.join(opts.exp_dir, 'code', 'classifier'))
 
 
