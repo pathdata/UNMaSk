@@ -1,5 +1,15 @@
 # UNMaSk: Unmasking the immune microecology of ductal carcinoma in situ with deep learning.
 
+Note: This project is a work in progress. 
+
+UNMaSk pipeline consists of processing pipelines for both HE and IHC images.
+1. Tissue Segmentation
+2. Cell Detection
+3. Cell Classification
+4. Ductal carcinoma in situ Segmentation (organised in CIS)
+
+Each of these pipelines are organised inside individual directory and you will be able to find more details in the respective sub-directories. Wherever possible docker images and command line instructions are specified to make it friendly for off the shelf users.
+
 # Overview schematic of UNMaSk pipeline for DCIS segmentation.
 <p align="center">
   <img src="environment/Fig1_overview.png" width="450" height="450"/>
