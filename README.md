@@ -3,7 +3,7 @@
 Note: This project is a work in progress. 
 
 UNMaSk pipeline consists of processing pipelines for both HE and IHC images.
-1. Tissue Segmentation (HE_Tissue_seg)
+1. Tissue Segmentation (HE_tissue_seg)
 2. Cell Detection      (Cell_Detection)
 3. Cell Classification (HE_cell_classification)
 4. Ductal carcinoma in situ Segmentation (organised in CIS)
