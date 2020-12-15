@@ -2,7 +2,7 @@
 
 
 
-UNMaSk pipeline consists of processing pipelines for both HE and IHC images.
+UNMaSk pipeline consists of processing pipelines for both HE and IHC images. The primary steps consists of four modules as given below.
 1. Tissue Segmentation (HE_tissue_seg)
 2. Cell Detection      (Cell_Detection)
 3. Cell Classification (HE_cell_classification)
