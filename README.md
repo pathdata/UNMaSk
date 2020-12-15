@@ -1,6 +1,6 @@
 # UNMaSk: Unmasking the immune microecology of ductal carcinoma in situ with deep learning.
 
-Note: This project is a work in progress. 
+
 
 UNMaSk pipeline consists of processing pipelines for both HE and IHC images.
 1. Tissue Segmentation (HE_tissue_seg)
@@ -50,4 +50,6 @@ Training data tiles were anonymised from raw HE image tiles. Request for data ac
 
 # Training
 Data preparation and implementation codes are maintained in this repository and will be periodically updated. Please contact the corresponding authours for future collaboration and any queries regarding the implementation.
+
+Note: This project is a work in progress and contact the corresponding authors for any queries
 
