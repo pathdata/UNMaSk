@@ -8,16 +8,16 @@ Please reference the citation if the code is used completely or partially in you
 
 # Docker container
 
-# Docker image for GPU environment
+## Docker image for GPU environment
 Tensorflow GPU container -> docker://nrypri001docker/tf1p4:IHCv1                          
 
-# Docker image for CPU environment
+## Docker image for CPU environment
 Tensorflow CPU container -> docker://nrypri001docker/tfcpu:HEv1
 
-# Publicly accessible webpage for cpu environment
+## Publicly accessible webpage for cpu environment
 https://hub.docker.com/r/nrypri001docker/tfcpu
 
-# Parameters for prediction of classification
+## Parameters for prediction of classification
 
 #exp_dir-> checkpoint_path                        
 #data_dir-> cws_path                               
