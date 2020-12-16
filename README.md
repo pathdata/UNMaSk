@@ -48,7 +48,7 @@ https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData/ove
 
 <div class="items">
 <figure>
-    <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_img_movie_001.gif" width="320" height="325">
+    <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_img_movie_001.gif" width="330" height="325">
     
 </figure>
 <figure>
