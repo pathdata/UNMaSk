@@ -44,10 +44,13 @@ https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData/ove
 
 # Illustrative images used in training IM-NET
 
+<p align="center">
+
 <figure>
     <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_img_movie_001.gif" width="250" height="250"/>
-    <figcaption>Caption goes here</figcaption>
+    <figcaption> Input Image </figcaption>
 </figure>
+</p>
 
 <p align="center">
   
@@ -56,7 +59,7 @@ https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData/ove
   <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_overlay_movie_001.gif" width="250" height="250"/>
 </p>
 
-`                     Input Image          Ground truth          Overlay Image `
+`                               Ground truth          Overlay Image `
 
 # Citation
 
