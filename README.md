@@ -15,6 +15,7 @@ Each of these pipelines are organised inside individual directory and you will b
 
 <p align="center">
   <img src="environment/Fig1_overview.png" width="450" height="450"/>
+   <figcaption> Input Image </figcaption>
  </p>
  
 `Figure 1. Overview schematic of UNMaSk pipeline for DCIS segmentation a. UNet architecture for tissue segmentation and one
