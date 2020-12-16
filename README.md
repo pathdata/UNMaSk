@@ -10,12 +10,14 @@ UNMaSk pipeline consists of processing pipelines for both HE and IHC images. The
 
 Each of these pipelines are organised inside individual directory and you will be able to find detailed explanation in the respective sub-directories. Wherever possible docker images and command line instructions are specified to make it friendly for off the shelf users.
 
-# Overview schematic of UNMaSk pipeline for DCIS segmentation.
+# UNMaSk pipeline overview and architecture 
+
+Overview schematic of UNMaSk pipeline for DCIS segmentation.
 <p align="center">
   <img src="environment/Fig1_overview.png" width="450" height="450"/>
  </p>
  
- # Schematic of IM-Net architecture for DCIS segmentation and schematic of DRDIN cell detection network. 
+ Schematic of IM-Net architecture for DCIS segmentation and schematic of DRDIN cell detection network. 
  <p align="center">
  
   <img src="environment/Fig2_ab_Revised_v1.png" width="450" height="450"/>
