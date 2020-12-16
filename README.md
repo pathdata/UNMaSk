@@ -57,7 +57,7 @@ https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData/ove
 </figure>
 <figure>
     <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_overlay_movie_001.gif" width="330" height="325"/>
-    <figcaption>    a. Input image b. Ground truth image c. Overlay image </figcaption>
+    <figcaption>    a. Input image         b. Ground truth image             c. Overlay image </figcaption>
  </figure>
 
 </div>
