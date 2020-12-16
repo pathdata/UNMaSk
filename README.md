@@ -14,7 +14,7 @@ Each of these pipelines are organised inside individual directory and you will b
 
 
 <p align="center">
-  <img src="environment/Fig1_overview.png" width="550" height="450"/>
+  <img src="environment/Fig1_overview.png" width="550" height="550"/>
    <figcaption> Figure 1. Overview schematic of UNMaSk pipeline for DCIS segmentation a. UNet architecture for tissue segmentation and one
 of the existing deep learning methods, single-shot detector (SSD) architecture, used for DCIS detection. b. Spatial Voronoi tessellation to
 examine local tissue ecology for each DCIS duct, based on deep learning results on DCIS segmentation and single-cell classification. Examples
@@ -27,7 +27,7 @@ colocalisation/Morisita Score (MS) spatial analysis. </figcaption>
 
  <p align="center">
   
-   <img src="environment/Fig2_ab_Revised_v1.png" width="550" height="450"/>
+   <img src="environment/Fig2_ab_Revised_v1.png" width="550" height="550"/>
    <figcaption> Figure 2. a. Schematic of IM-Net architecture for DCIS segmentation b. Schematic of DRDIN cell detection network. </figcaption>
   </p>
   
