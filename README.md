@@ -44,16 +44,26 @@ https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData/ove
 
 # Illustrative images used in training IM-NET
 
+<div class="items">
+<figure>
+    <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_img_movie_001.gif" width="250" height="250">
+    <figcaption> Input Image </figcaption>
+</figure>
+<figure>
+    <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_mask_movie_001.gif" width="250" height="250"> 
+    <figcaption> Ground truth image </figcaption>
+</figure></div>
+
 <p align="center">
 
 <figure>
-    <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_img_movie_001.gif" width="250" height="250"/>
+    <img src1="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_img_movie_001.gif" width="250" height="250"/>
     <figcaption> Input Image </figcaption>
 
-    <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_mask_movie_001.gif" width="250" height="250"/>
+    <img src2="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_mask_movie_001.gif" width="250" height="250"/>
     <figcaption> Ground truth image </figcaption>
 
-    <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_overlay_movie_001.gif" width="250" height="250"/>
+    <img src3="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_overlay_movie_001.gif" width="250" height="250"/>
     <figcaption> Overlay image </figcaption>
 </figure>
 </p>
