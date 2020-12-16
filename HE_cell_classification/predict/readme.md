@@ -4,8 +4,10 @@ Cells are trained using Supervised CNN and the ensemble classification determine
 
 Cell class used for classification are epithelial cell, stromal cell, lymphocyte and other cell. The color codes are present in the `HE_Fib_Lym_Tum_Others.csv`.
 
-Example cell annotations are organised as in below hyperlink.
+Example cell annotations on tile images and respective csv for the slides are organised as in below hyperlink.
 https://github.com/pathdata/HE_Tissue_Segmentation/blob/master/HE_cell_classification/train/cell_annotations/AnnotatedTiles
+
+https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/HE_cell_classification/train/cell_annotations/celllabels
 
 Please reference the citation if the code is used completely or partially in your work.
 
