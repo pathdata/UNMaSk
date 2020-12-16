@@ -35,13 +35,13 @@ colocalisation/Morisita Score (MS) spatial analysis. </figcaption>
 
 # Training Data
 
-Images used for training
+a. Images used for training
 https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData
 
-Ground truth images
+b. Ground truth images
 https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData/mask
 
-Overlay of groundtruth on the training image
+c. Overlay of groundtruth on the training image
 https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData/overlay
 
 # Illustrative images used in training IM-NET
