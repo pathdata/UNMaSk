@@ -44,6 +44,11 @@ https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData/ove
 
 # Illustrative images used in training IM-NET
 
+<figure>
+    <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_img_movie_001.gif" width="250" height="250"/>
+    <figcaption>Caption goes here</figcaption>
+</figure>
+
 <p align="center">
   
   <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_img_movie_001.gif" width="250" height="250"/>
