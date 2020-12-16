@@ -1,7 +1,7 @@
 # UNMaSk: Unmasking the immune microecology of ductal carcinoma in situ with deep learning.
 
 
-# Parameters of train and predict for tissue segmentation pipeline
+## Parameters of train and predict for tissue segmentation pipeline
 
 Command line arguments for Training
 
