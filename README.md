@@ -53,13 +53,22 @@ https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData/ove
 </p>
 
 <p align="center">
-  
-  <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_img_movie_001.gif" width="250" height="250"/>
-  <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_mask_movie_001.gif" width="250" height="250"/>
-  <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_overlay_movie_001.gif" width="250" height="250"/>
+
+<figure>
+    <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_mask_movie_001.gif" width="250" height="250"/>
+    <figcaption> Ground truth image </figcaption>
+</figure>
 </p>
 
-`                               Ground truth          Overlay Image `
+<p align="center">
+
+<figure>
+    <img src="CIS/PrepareData/IM-NET/training_material/DCIS_freehand_sampled_pos_overlay_movie_001.gif" width="250" height="250"/>
+    <figcaption> Overlay image </figcaption>
+</figure>
+</p>
+
+
 
 # Citation
 
