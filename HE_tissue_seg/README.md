@@ -55,5 +55,9 @@ All training data of carcinoma in situ regions that were annotated as a part of 
 Training data tiles were anonymised from raw HE image tiles. Request for data access for the Duke samples can be submitted to E.S.H and Y.Y
 
 # Training
+Images and respective mask used for tissue segmentation can be found as in the hyperlink below
+https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/HE_Data/TransATAC/TA_orig
+https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/HE_Data/TransATAC/TA_mask
+
 Data preparation and implementation codes are maintained in this repository and will be periodically updated. Please contact the corresponding authours for future colloborations and any queries regarding the implementation.
 
