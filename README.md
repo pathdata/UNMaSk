@@ -66,6 +66,8 @@ https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData/ove
 
 # Citation
 
+https://doi.org/10.1038/s41523-020-00205-5
+
 # Reference
 
 All training data of carcinoma in situ regions that were annotated as a part of the project is made available in this github repository.
