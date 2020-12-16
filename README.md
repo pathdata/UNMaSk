@@ -12,13 +12,17 @@ Each of these pipelines are organised inside individual directory and you will b
 
 # UNMaSk pipeline overview and architecture 
 
-Overview schematic of UNMaSk pipeline for DCIS segmentation.
+
 <p align="center">
   <img src="environment/Fig1_overview.png" width="450" height="450"/>
  </p>
  
+      ```Overview schematic of UNMaSk pipeline for DCIS segmentation```
+ 
  Schematic of IM-Net architecture for DCIS segmentation and schematic of DRDIN cell detection network. 
  <p align="center">
+  
+      
  
   <img src="environment/Fig2_ab_Revised_v1.png" width="450" height="450"/>
   </p>
