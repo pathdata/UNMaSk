@@ -2,7 +2,7 @@
 
 
 
-UNMaSk pipeline consists of processing pipelines for segmentation of ductal carcinoma in situ (DCIS) regions from whole slide images. The primary steps are broken down into four modules are as given below.
+UNMaSk pipeline consists of processing pipelines for segmentation of ductal carcinoma in situ (DCIS) regions from whole slide images. The primary steps are broken down into four modules and are as given below.
 1. Tissue Segmentation (HE_tissue_seg)
 2. Cell Detection      (Cell_Detection)
 3. Cell Classification (HE_cell_classification)
