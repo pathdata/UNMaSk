@@ -10,7 +10,7 @@ UNMaSk pipeline consists of processing pipelines for both HE and IHC images. The
 
 Each of these pipelines are organised inside individual directory and you will be able to find detailed explanation in the respective sub-directories. Wherever possible docker images and command line instructions are specified to make it user friendly for off the shelf users.
 
-# UNMaSk pipeline overview and architecture 
+## UNMaSk pipeline overview and architecture 
 
 
 <p align="center">
@@ -33,7 +33,7 @@ colocalisation/Morisita Score (MS) spatial analysis. </figcaption>
   
 
 
-# Training Data
+## Training Data
 
 a. Images used for training
 https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData (Left)
@@ -44,7 +44,7 @@ https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData/mas
 c. Overlay of groundtruth on the training image
 https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData/overlay (Right)
 
-# Illustrative images used in training IM-NET
+## Illustrative images used in training IM-NET
 
 <div class="items">
 <figure>
