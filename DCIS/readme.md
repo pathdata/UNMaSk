@@ -3,9 +3,9 @@
 
 ### Prepare Data using TrainData
 
-1. IM-Net used free hand annotation masks and the images in mat format
+1. IM-Net used free hand annotation masks and the images and the data is saved in mat format
 
-2. Convert the mat to tfrecords before training
+2. Convert the mat files to single tfrecord file on for training and one for validation with train/valid split of 0.7 before training
 
 
 
