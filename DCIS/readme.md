@@ -7,9 +7,11 @@
 
 2. Convert the mat to tfrecords before training
 
-3. Predict the output based on the inference file generated in exp_dir
+
 
 
 ### Run prediction on the test images in predict_CIS directory using generate_output_DCIS.py script
+
+1. Predict output on test images based on the inference file generated in exp_dir during training
 
 ### Run Spatial analysis after stitching the tiled output and generate Morisita score for each slide.
