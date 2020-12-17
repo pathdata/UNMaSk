@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<annotation>
+  <folder>images</folder>
+  <filename>T1Da_0193_2.jpg</filename>
+  <filename>D:\TF_TISSUE\HE_Tissue_seg\img\T1Da_0193_2.jpg</filename>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>500</width>
+    <height>500</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>DCIS</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>93</xmin>
+      <ymin>184</ymin>
+      <xmax>290</xmax>
+      <ymax>355</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>DCIS</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>165</xmin>
+      <ymin>0</ymin>
+      <xmax>381</xmax>
+      <ymax>87</ymax>
+    </bndbox>
+  </object>
+</annotation>
