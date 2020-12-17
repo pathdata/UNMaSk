@@ -8,7 +8,7 @@ UNMaSk pipeline consists of processing pipelines for segmentation of ductal carc
 3. Cell Classification (HE_cell_classification)
 4. Ductal carcinoma in situ Segmentation (organised in CIS)
 
-Each of these pipelines are organised inside individual directory and you will be able to find detailed explanation in the respective sub-directories. Wherever possible docker images and command line instructions are specified to make it user friendly for off the shelf users.
+Modular arrangement help in navigation to each module and supports both tile level and tissue level processing. Each of these pipelines are organised inside individual directory and you will be able to find detailed explanation in the respective sub-directories. Wherever possible docker images and command line instructions are specified to make it user friendly for off the shelf users.
 
 ## UNMaSk pipeline overview and architecture 
 
