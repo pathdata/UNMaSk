@@ -2,7 +2,7 @@
 
 Digitalization of histopathology slides allows the use of powerful deep learning algorithm integration and it is further explored and used as a tool to aid the diagnostic process to make a more precise assessments. To achieve them we need tools that can support data preparation systematically. Our tool supports the annotation extraction from WSI without much dependence on the whether annotation is done on a WSI or on a tile level. Currently our tool supports annotations performed in both Aperio and Hamamatsu images. Recently there is significant interests, highlighting the need for creating powerful database for morphological tissue structures to study its association with its surrounding microenvironment for tissue types such as breast, lung and prostate. One such article is cited in the reference section below.
 
-In this section we will summarize how we parse the freehand annotations drawn on WSI to train the CIS detection models.
+In this section we will summarize how we parse the freehand annotations drawn on WSI to train DCIS segmentation model.
 
 For our demonstration, we have used Imagescope which is a generic open source tool, available for performing annotation on WSI images.
 
