@@ -1,0 +1,170 @@
+<Annotations MicronsPerPixel="0.452800">
+  <Annotation Id="1" Name="" ReadOnly="0" NameReadOnly="0" LineColorReadOnly="0" Incremental="0" Type="4" LineColor="65280" Visible="1" Selected="1" MarkupImagePath="" MacroName="">
+    <Attributes>
+      <Attribute Name="Description" Id="0" Value=""/>
+    </Attributes>
+    <Regions>
+      <RegionAttributeHeaders>
+        <AttributeHeader Id="9999" Name="Region" ColumnWidth="-1"/>
+        <AttributeHeader Id="9997" Name="Length" ColumnWidth="-1"/>
+        <AttributeHeader Id="9996" Name="Area" ColumnWidth="-1"/>
+        <AttributeHeader Id="9998" Name="Text" ColumnWidth="-1"/>
+        <AttributeHeader Id="1" Name="Description" ColumnWidth="-1"/>
+      </RegionAttributeHeaders>
+      <Region Id="1" Type="1" Zoom="0.310000" Selected="0" ImageLocation="" ImageFocus="-1" Length="4187.1" Area="1065952.1" LengthMicrons="1895.9" AreaMicrons="218549.9" Text="DCIS" NegativeROA="0" InputRegionId="0" Analyze="1" DisplayId="1">
+        <Attributes/>
+        <Vertices>
+          <Vertex X="8083.774184" Y="8254.548383"/>
+          <Vertex X="9303.129014" Y="8254.548383"/>
+          <Vertex X="9303.129014" Y="9128.741924"/>
+          <Vertex X="8083.774184" Y="9128.741924"/>
+        </Vertices>
+      </Region>
+      <Region Id="2" Type="1" Zoom="0.250000" Selected="0" ImageLocation="" ImageFocus="-1" Length="4016.0" Area="781440.0" LengthMicrons="1818.4" AreaMicrons="160217.0" Text="DCIS" NegativeROA="0" InputRegionId="0" Analyze="1" DisplayId="2">
+        <Attributes/>
+        <Vertices>
+          <Vertex X="11796" Y="10040"/>
+          <Vertex X="13276" Y="10040"/>
+          <Vertex X="13276" Y="10568"/>
+          <Vertex X="11796" Y="10568"/>
+        </Vertices>
+      </Region>
+      <Region Id="3" Type="1" Zoom="0.250000" Selected="0" ImageLocation="" ImageFocus="-1" Length="6176.0" Area="1616560.0" LengthMicrons="2796.5" AreaMicrons="331439.8" Text="DCIS" NegativeROA="0" InputRegionId="0" Analyze="1" DisplayId="3">
+        <Attributes/>
+        <Vertices>
+          <Vertex X="10664" Y="10832"/>
+          <Vertex X="13084" Y="10832"/>
+          <Vertex X="13084" Y="11500"/>
+          <Vertex X="10664" Y="11500"/>
+        </Vertices>
+      </Region>
+      <Region Id="4" Type="1" Zoom="0.250000" Selected="0" ImageLocation="" ImageFocus="-1" Length="4312.0" Area="1154688.0" LengthMicrons="1952.5" AreaMicrons="236743.2" Text="DCIS" NegativeROA="0" InputRegionId="0" Analyze="1" DisplayId="4">
+        <Attributes/>
+        <Vertices>
+          <Vertex X="7220" Y="12624"/>
+          <Vertex X="8384" Y="12624"/>
+          <Vertex X="8384" Y="13616"/>
+          <Vertex X="7220" Y="13616"/>
+        </Vertices>
+      </Region>
+      <Region Id="5" Type="1" Zoom="0.250000" Selected="0" ImageLocation="" ImageFocus="-1" Length="2376.0" Area="351072.0" LengthMicrons="1075.9" AreaMicrons="71979.5" Text="DCIS" NegativeROA="0" InputRegionId="0" Analyze="1" DisplayId="5">
+        <Attributes/>
+        <Vertices>
+          <Vertex X="7432" Y="13868"/>
+          <Vertex X="7984" Y="13868"/>
+          <Vertex X="7984" Y="14504"/>
+          <Vertex X="7432" Y="14504"/>
+        </Vertices>
+      </Region>
+      <Region Id="6" Type="1" Zoom="0.197788" Selected="0" ImageLocation="" ImageFocus="-1" Length="4590.8" Area="1316277.7" LengthMicrons="2078.7" AreaMicrons="269873.6" Text="DCIS" NegativeROA="0" InputRegionId="0" Analyze="1" DisplayId="6">
+        <Attributes/>
+        <Vertices>
+          <Vertex X="8529.167698" Y="20112.918243"/>
+          <Vertex X="9707.195633" Y="20112.918243"/>
+          <Vertex X="9707.195633" Y="21230.275211"/>
+          <Vertex X="8529.167698" Y="21230.275211"/>
+        </Vertices>
+      </Region>
+      <Region Id="7" Type="1" Zoom="0.197788" Selected="0" ImageLocation="" ImageFocus="-1" Length="4975.0" Area="1391405.2" LengthMicrons="2252.7" AreaMicrons="285276.8" Text="DCIS" NegativeROA="0" InputRegionId="0" Analyze="1" DisplayId="7">
+        <Attributes/>
+        <Vertices>
+          <Vertex X="9813.369825" Y="19733.724701"/>
+          <Vertex X="10662.763357" Y="19733.724701"/>
+          <Vertex X="10662.763357" Y="21371.840800"/>
+          <Vertex X="9813.369825" Y="21371.840800"/>
+        </Vertices>
+      </Region>
+      <Region Id="8" Type="1" Zoom="0.152472" Selected="0" ImageLocation="" ImageFocus="-1" Length="6939.0" Area="3002634.5" LengthMicrons="3142.0" AreaMicrons="615623.7" Text="DCIS" NegativeROA="0" InputRegionId="0" Analyze="1" DisplayId="8">
+        <Attributes/>
+        <Vertices>
+          <Vertex X="19033.346654" Y="26273.290525"/>
+          <Vertex X="20850.078580" Y="26273.290525"/>
+          <Vertex X="20850.078580" Y="27926.057475"/>
+          <Vertex X="19033.346654" Y="27926.057475"/>
+        </Vertices>
+      </Region>
+      <Region Id="9" Type="1" Zoom="0.152472" Selected="0" ImageLocation="" ImageFocus="-1" Length="3554.8" Area="787350.6" LengthMicrons="1609.6" AreaMicrons="161428.8" Text="DCIS" NegativeROA="0" InputRegionId="0" Analyze="1" DisplayId="9">
+        <Attributes/>
+        <Vertices>
+          <Vertex X="20955.016164" Y="24686.109564"/>
+          <Vertex X="21794.516837" Y="24686.109564"/>
+          <Vertex X="21794.516837" Y="25623.989223"/>
+          <Vertex X="20955.016164" Y="25623.989223"/>
+        </Vertices>
+      </Region>
+      <Region Id="10" Type="1" Zoom="0.114032" Selected="0" ImageLocation="" ImageFocus="-1" Length="4735.5" Area="1349590.8" LengthMicrons="2144.2" AreaMicrons="276703.7" Text="DCIS" NegativeROA="0" InputRegionId="0" Analyze="1" DisplayId="10">
+        <Attributes/>
+        <Vertices>
+          <Vertex X="15872.633043" Y="20932.307744"/>
+          <Vertex X="17284.522681" Y="20932.307744"/>
+          <Vertex X="17284.522681" Y="21888.183337"/>
+          <Vertex X="15872.633043" Y="21888.183337"/>
+        </Vertices>
+      </Region>
+      <Region Id="13" Type="1" Zoom="0.310000" Selected="0" ImageLocation="" ImageFocus="-1" Length="3296.8" Area="651696.1" LengthMicrons="1492.8" AreaMicrons="133615.9" Text="DCIS" NegativeROA="0" InputRegionId="0" Analyze="1" DisplayId="13">
+        <Attributes/>
+        <Vertices>
+          <Vertex X="36477.645145" Y="17415.999994"/>
+          <Vertex X="37467.967718" Y="17415.999994"/>
+          <Vertex X="37467.967718" Y="18074.064505"/>
+          <Vertex X="36477.645145" Y="18074.064505"/>
+        </Vertices>
+      </Region>
+      <Region Id="14" Type="1" Zoom="0.380000" Selected="0" ImageLocation="" ImageFocus="-1" Length="2952.6" Area="542243.8" LengthMicrons="1337.0" AreaMicrons="111175.1" Text="DCIS" NegativeROA="0" InputRegionId="0" Analyze="1" DisplayId="14">
+        <Attributes/>
+        <Vertices>
+          <Vertex X="18373.421074" Y="16736.736852"/>
+          <Vertex X="19162.894768" Y="16736.736852"/>
+          <Vertex X="19162.894768" Y="17423.578966"/>
+          <Vertex X="18373.421074" Y="17423.578966"/>
+        </Vertices>
+      </Region>
+      <Region Id="15" Type="1" Zoom="0.530000" Selected="0" ImageLocation="" ImageFocus="-1" Length="2977.4" Area="539686.8" LengthMicrons="1348.1" AreaMicrons="110650.8" Text="DCIS" NegativeROA="0" InputRegionId="0" Analyze="1" DisplayId="15">
+        <Attributes/>
+        <Vertices>
+          <Vertex X="18662.490618" Y="15724.339639"/>
+          <Vertex X="19526.641608" Y="15724.339639"/>
+          <Vertex X="19526.641608" Y="16348.867974"/>
+          <Vertex X="18662.490618" Y="16348.867974"/>
+        </Vertices>
+      </Region>
+      <Region Id="16" Type="1" Zoom="0.380000" Selected="0" ImageLocation="" ImageFocus="-1" Length="2900.0" Area="524861.5" LengthMicrons="1313.1" AreaMicrons="107611.2" Text="DCIS" NegativeROA="0" InputRegionId="0" Analyze="1" DisplayId="16">
+        <Attributes/>
+        <Vertices>
+          <Vertex X="19647.157914" Y="10374.052641"/>
+          <Vertex X="20344.526344" Y="10374.052641"/>
+          <Vertex X="20344.526344" Y="11126.684229"/>
+          <Vertex X="19647.157914" Y="11126.684229"/>
+        </Vertices>
+      </Region>
+      <Region Id="17" Type="1" Zoom="0.240000" Selected="0" ImageLocation="" ImageFocus="0" Length="2916.7" Area="531406.3" LengthMicrons="1320.7" AreaMicrons="108953.1" Text="DCIS" NegativeROA="0" InputRegionId="0" Analyze="1" DisplayId="17">
+        <Attributes/>
+        <Vertices>
+          <Vertex X="19041.666734" Y="19958.000046"/>
+          <Vertex X="19787.500084" Y="19958.000046"/>
+          <Vertex X="19787.500084" Y="20670.500062"/>
+          <Vertex X="19041.666734" Y="20670.500062"/>
+        </Vertices>
+      </Region>
+      <Region Id="18" Type="1" Zoom="0.350000" Selected="0" ImageLocation="" ImageFocus="0" Length="2074.3" Area="263183.7" LengthMicrons="939.2" AreaMicrons="53960.0" Text="DCIS" NegativeROA="0" InputRegionId="0" Analyze="1" DisplayId="18">
+        <Attributes/>
+        <Vertices>
+          <Vertex X="23773.857220" Y="22960.142892"/>
+          <Vertex X="24368.142944" Y="22960.142892"/>
+          <Vertex X="24368.142944" Y="23403.000043"/>
+          <Vertex X="23773.857220" Y="23403.000043"/>
+        </Vertices>
+      </Region>
+      <Region Id="19" Type="1" Zoom="0.350000" Selected="1" ImageLocation="" ImageFocus="0" Length="2742.9" Area="447273.5" LengthMicrons="1242.0" AreaMicrons="91703.5" Text="DCIS" NegativeROA="0" InputRegionId="0" Analyze="1" DisplayId="19">
+        <Attributes/>
+        <Vertices>
+          <Vertex X="22871.000061" Y="23320.142898"/>
+          <Vertex X="23708.142933" Y="23320.142898"/>
+          <Vertex X="23708.142933" Y="23854.428622"/>
+          <Vertex X="22871.000061" Y="23854.428622"/>
+        </Vertices>
+      </Region>
+    </Regions>
+    <Plots/>
+  </Annotation>
+</Annotations>
