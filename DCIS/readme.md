@@ -1,11 +1,12 @@
 
 # Workflow of DCIS segmentation
 
-### Prepare Data using TrainData
+### Data Preparation  
 
-1. IM-Net used free hand annotation masks and mat files are generated as initial step. Stride and patch size can be changed within the code depending on the network parameters.
-
-2. Convert the mat files to single tfrecord file on for training and validation.
+1. IM-Net uses free hand annotation masks collected exhaustively by ensuring no regions being missing in each represented tile.
+2. Mat files are generated subsequently. 
+3. Stride and patch size can be changed within the code depending on the network parameters.
+4. Convert the mat files to single tfrecord file on for training and validation.
 
 
 ### Run prediction on the test images in predict_CIS directory using generate_output_DCIS.py script
