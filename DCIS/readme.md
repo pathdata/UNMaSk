@@ -3,7 +3,7 @@
 
 ### Data Preparation  
 
-1. IM-Net uses free hand annotation masks collected exhaustively by ensuring no regions being missing in each represented tile.
+1. IM-Net uses free hand annotation masks collected exhaustively by ensuring no regions being missed in each represented tile.
 2. Mat files are generated subsequently. 
 3. Stride and patch size can be changed within the code depending on the network parameters.
 4. Convert the mat files to single tfrecord file on for training and validation.
