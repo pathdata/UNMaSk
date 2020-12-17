@@ -11,7 +11,7 @@ extracting them we could export to any co-ordinate system and can be parsed to t
 
 For demo purpose, I have used a CMU-1.ndpi downloaded from the following web link (http://openslide.cs.cmu.edu/download/openslide-testdata/Hamamatsu/)
  
-Note: In general WSI images are high in memory. Corresponding authors of the publication can be contacted to see if the WSI can be made available. Please  the Data availability section of the manuscript to find out more.
+Note: In general WSI images are high in memory. Corresponding authors of the publication can be contacted to see if the WSI can be made available (PLN,YY,ESH). Please  the Data availability section of the manuscript to find out more.
  
 
 1. Visualization
