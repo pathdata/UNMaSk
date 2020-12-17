@@ -1,6 +1,6 @@
 # Understanding Data preparation from Whole slide images (WSI)
 
-Digitalization of histopathology slides allows the use of powerful deep learning algorithms integration and it can be further used as a tool in the diagnostic process to make a more precise assessments. To achieve them we need tools that can support data preparation. Our tool supports the annotation of WSI made in Aperio and Hamamatsu images. Recent literature has highlighted on the need on creating powerful database for the tissue types. One such article is cited in the reference section below.
+Digitalization of histopathology slides allows the use of powerful deep learning algorithm integration and it is further explored and used as a tool to aid the diagnostic process to make a more precise assessments. To achieve them we need tools that can support data preparation systematically. Our tool supports the annotation extraction from WSI without much dependence on the whether annotation is done on a WSI or on a tile level. Currently our tool supports annotations performed in both Aperio and Hamamatsu images. Recently there is significant interests, highlighting the need for creating powerful database for morphological tissue structures to study its association with its surrounding microenvironment for tissue types such as breast, lung and prostate. One such article is cited in the reference section below.
 
 In this section we will summarize how we parse the freehand annotations drawn on WSI to train the CIS detection models.
 
@@ -11,7 +11,7 @@ extracting them we could export to any co-ordinate system and can be parsed to t
 
 For demo purpose, I have used a CMU-1.ndpi downloaded from the following web link (http://openslide.cs.cmu.edu/download/openslide-testdata/Hamamatsu/)
  
-Note: In general WSI images are high in memory. Corresponding authors of the publication can be contacted to see if the WSI can be made available. Please check the Data availability section of the manuscript to find out more.
+Note: In general WSI images are high in memory. Corresponding authors of the publication can be contacted to see if the WSI can be made available. Please  the Data availability section of the manuscript to find out more.
  
 
 1. Visualization
@@ -31,7 +31,7 @@ Square annotation directory contains
 	
 
 Summary
-1. Read whole slide image (Image format supported by imagescope and openslide library is used here for the purpose of explaination).
+1. Read whole slide image (Image format supported by imagescope and openslide  is used here for the purpose of explaination).
 2. Extract the free hand vertices.
 3. Save the binary mask for processing.
 4. Annotation supporting two whole slide image formats are provided here.
@@ -44,4 +44,4 @@ Summary
 </p>
 
 # Reference
-Lindman, K., Rose, J.F., Lindvall, M., Lundström, C. and Treanor, D., 2019. Annotations, ontologies, and whole slide images–Development of an annotated ontology-driven whole slide image library of normal and abnormal human tissue. Journal of Pathology Informatics, 10.
+Lindman, K., Rose, J.F., Lindvall, M., Lundström, C. and Treanor, D., 2019. Annotations, ontologies, and whole slide images–Development of an annotated ontology-driven whole slide image  of normal and abnormal human tissue. Journal of Pathology Informatics, 10.
