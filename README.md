@@ -44,7 +44,7 @@ https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData/mas
 c. Overlay of groundtruth on the training image
 https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData/overlay (Right)
 
-## Illustrative images used in training IM-NET
+## Illustrative training images for DCIS segmentation based on IM-NET
 
 <div class="items">
 <figure>
