@@ -9,11 +9,9 @@ Tree structure of tissue segmentation pipeline
 <p align="left">
   <img src="Train_HE/tree_HE_Tissue_Seg.png" width="450" height="450"/>
  </p>
- 
-$ ./tree-md .
+
 # Project tree
 
-.
  * [tree-md](./tree-md)
  * [dir2](./dir2)
    * [file21.ext](./dir2/file21.ext)
