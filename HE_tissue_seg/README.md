@@ -27,7 +27,7 @@ This pipeline will delineate the tissue from the background.
  * [main.py](./main.py)
  * [main_WSI.py](./main_WSI.py)
  * [requirements.txt](./requirement.txt)
- * [Dockerfile](./requirement.txt)
+ * [Dockerfile](./Dockerfile)
  * [README.md](./README.md)
  
  
