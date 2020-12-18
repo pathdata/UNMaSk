@@ -18,7 +18,7 @@ Tree structure of tissue segmentation pipeline
    * [file12.ext](./dir1/file12.ext)
  * [TestImages](./TestImages)
  * [Train_HE](./Train_HE)
- * [WSI]((./WSI)
+ * [WSI](./WSI)
     * [HE_S.svs](./WSI/HE_S.svs)
  * [main.py](./main.py)
  * [main_WSI.py](./main_WSI.py)
