@@ -74,7 +74,5 @@ Training data tiles were anonymised from raw HE image tiles. Request for data ac
 
 1. This project is a work in progress and contact the corresponding authors for any queries. Docker images are packaged in each of these modules are made available and few example test images are provided for users to start their experiment. All the modules are independant of each other so each module can be iteratively tested. Usage of tiled images will help to test the pipeline without performing tissue segmentation.
 
-2. Data preparation and implementation codes are maintained in this repository and will be periodically updated. Please contact the corresponding authours for future collaboration and any queries regarding the implementation.
 
-3. Due to file size restriction on github server all checkpoint files are not uploaded.
 
