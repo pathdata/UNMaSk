@@ -4,8 +4,6 @@
 
 This pipeline will delineate the tissue from the background. 
 
-Tree structure of tissue segmentation pipeline 
-
 # Tissue segmentation module tree
 
  * [Tissue Segmentation](./HE_tissue_seg)
@@ -86,7 +84,7 @@ https://hub.docker.com/repository/docker/nrypri001docker/tf
 All training data of carcinoma in situ regions that were annotated as a part of the project is made available in this github repository.
 Training data tiles were anonymised from raw HE image tiles. Request for data access for the Duke samples can be submitted to E.S.H and Y.Y
 
-# Training
+## Training
 Images and respective mask used for tissue segmentation can be found as in the hyperlink below
 https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/HE_Data/TransATAC/TA_orig
 https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/HE_Data/TransATAC/TA_mask
