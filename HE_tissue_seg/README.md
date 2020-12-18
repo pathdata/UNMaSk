@@ -1,7 +1,7 @@
-# UNMaSk: Unmasking the immune microecology of ductal carcinoma in situ with deep learning.
+## UNMaSk: Unmasking the immune microecology of ductal carcinoma in situ with deep learning.
 
 
-## Parameters of train and predict for tissue segmentation pipeline
+### Parameters of train and predict for tissue segmentation pipeline
 
 Command line arguments for Training
 
@@ -39,17 +39,17 @@ optional arguments:
   `-epochs EPOCHS, --epochs EPOCHS            total number of epochs`
 
 
-# Docker Container
+## Docker Container
 
 ```docker://nrypri001docker/tf:tsv1 ```
 
-# Publicly accessible weblink
+## Publicly accessible weblink
 
 https://hub.docker.com/repository/docker/nrypri001docker/tf
 
-# Citation
+## Citation
 
-# Reference
+## Reference
 
 All training data of carcinoma in situ regions that were annotated as a part of the project is made available in this github repository.
 Training data tiles were anonymised from raw HE image tiles. Request for data access for the Duke samples can be submitted to E.S.H and Y.Y
