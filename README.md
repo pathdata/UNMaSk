@@ -22,27 +22,24 @@ shown are immune depleted and immune predominant/inflamed ecology local to indiv
 colocalisation/Morisita Score (MS) spatial analysis. </figcaption>
  </p>
  
-
- 
-
- <p align="center">
+<p align="center">
   
    <img src="environment/Fig2_ab_Revised_v1.png" width="550" height="550"/>
    <figcaption> Figure 2. a. Schematic of IM-Net architecture for DCIS segmentation b. Schematic of DRDIN cell detection network. </figcaption>
-  </p>
+ </p>
   
 
 
 ## Training Data and annotations used in DCIS segmentation
 
 a. Images used for training
-https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData (Left)
+https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/DCIS/TrainData (Left)
 
 b. Ground truth images
-https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData/mask (Middle)
+https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/DCIS/TrainData/mask (Middle)
 
 c. Overlay of groundtruth on the training image
-https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData/overlay (Right)
+https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/DCIS/TrainData/overlay (Right)
 
 ## Illustrative training images for DCIS segmentation based on IM-NET
 
@@ -76,5 +73,5 @@ Training data tiles were anonymised from raw HE image tiles. Request for data ac
 # Training
 Data preparation and implementation codes are maintained in this repository and will be periodically updated. Please contact the corresponding authours for future collaboration and any queries regarding the implementation.
 
-Note: This project is a work in progress and contact the corresponding authors for any queries. Docker images are packaged in each of these modules are made available and few example test images are provided for users to start their exoeriment. All the modules are independant of each other so each module can be iteratively tested. Usage of tiled images will help to test the pipeline without performing tissue segmentation.
+Note: This project is a work in progress and contact the corresponding authors for any queries. Docker images are packaged in each of these modules are made available and few example test images are provided for users to start their experiment. All the modules are independant of each other so each module can be iteratively tested. Usage of tiled images will help to test the pipeline without performing tissue segmentation.
 
