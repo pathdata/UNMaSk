@@ -4,7 +4,7 @@
 
 This pipeline will delineate the tissue from the background. 
 
-# Tissue segmentation module tree
+## Tissue segmentation module tree
 
  * [Tissue Segmentation](./HE_tissue_seg)
  * [TestImages](./TestImages)
