@@ -16,3 +16,12 @@
 ### Run Spatial analysis after stitching the tiled output and generate Morisita score for each slide.
 
 1. Voronoi maps are generated and the cell co-ordinates within each polygon is used to compute Morisita score between epithelial cell and lymphocyte.
+
+
+
+
+
+##### Notes
+1. Data preparation and implementation codes are maintained in this repository and will be periodically updated. Please contact the corresponding authours for future collaboration and any queries regarding the implementation.
+
+2. Due to file size restriction on github server all checkpoint files are not uploaded.
