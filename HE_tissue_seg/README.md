@@ -6,34 +6,30 @@ This pipeline will delineate the tissue from the background.
 
 Tree structure of tissue segmentation pipeline 
 
-# Project tree
+# Tissue segmentation module tree
 
  * [Tissue Segmentation](./HE_tissue_seg)
+ * [TestImages](./TestImages)
+    * [TA008_027-2015-12-07_18.23.05_Ss1.jpg](./dir1/TA008_027-2015-12-07_18.23.05_Ss1.jpg)
+    * [TA022_006-2015-11-23_14.21.23_Ss1.jpg](./dir1/TA022_006-2015-11-23_14.21.23_Ss1.jpg)
+ * [Train_HE](./Train_HE)
+    * [he_imgs_train.npy](./dir1/he_imgs_train.npy)
+    * [he_imgs_train.npy](./dir1/he_imgs_train.npy)
+    * [imgs_mask_valid.npy](./dir/imgs_mask_valid.npy)
+    * [imgs_valid.npy](./dir1/imgs_valid.npy)
  * [scripts](./scripts)
    * [predict_HE_Inception_unet.py](./dir2/predict_HE_Inception_unet.py)
    * [predict_parser.py](./dir2/predict_parser.py)
    * [slidingpatches.py](./dir2/slidingpatches.py)
    * [train_HE_BLInception_unet.py](./dir2/train_HE_BLInception_unet.py)
  * [model](./model_HE_Inception_unet)
-    * [model-tissue-seg.h5](./dir2/model-tissue-seg.h5)
- * [Test](./Test)
-   * [file11.ext](./dir1/file11.ext)
-   * [file12.ext](./dir1/file12.ext)
- * [TestImages](./TestImages)
-    * [TA008_027-2015-12-07_18.23.05_Ss1.jpg](./dir1/TA008_027-2015-12-07_18.23.05_Ss1.jpg)
-    * [TA022_006-2015-11-23_14.21.23_Ss1.jpg](./dir1/TA022_006-2015-11-23_14.21.23_Ss1.jpg)
-    
- * [Train_HE](./Train_HE)
-    * [he_imgs_train.npy](./dir1/he_imgs_train.npy)
-    * [he_imgs_train.npy](./dir1/he_imgs_train.npy)
-    * [imgs_mask_valid.npy](./dir/imgs_mask_valid.npy)
-    * [imgs_valid.npy](./dir1/imgs_valid.npy)
-    
+    * [model-tissue-seg.h5](./dir2/model-tissue-seg.h5)    
  * [WSI](./WSI)
     * [HE_S.svs](./WSI/HE_S.svs)
  * [main.py](./main.py)
  * [main_WSI.py](./main_WSI.py)
  * [requirements.txt](./requirement.txt)
+ * [Dockerfile](./requirement.txt)
  * [README.md](./README.md)
  
  
