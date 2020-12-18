@@ -8,8 +8,8 @@ This pipeline will delineate the tissue from the background.
 
  * [Tissue Segmentation](./HE_tissue_seg)
  * [TestImages](./TestImages)
-    * [TA008_027-2015-12-07_18.23.05_Ss1.jpg](./dir1/TA008_027-2015-12-07_18.23.05_Ss1.jpg)
-    * [TA022_006-2015-11-23_14.21.23_Ss1.jpg](./dir1/TA022_006-2015-11-23_14.21.23_Ss1.jpg)
+    * [TA008_027-2015-12-07_18.23.05_Ss1.jpg](./TestImages/TA008_027-2015-12-07_18.23.05_Ss1.jpg)
+    * [TA022_006-2015-11-23_14.21.23_Ss1.jpg](./TestImages/TA022_006-2015-11-23_14.21.23_Ss1.jpg)
  * [Train_HE](./Train_HE)
     * [he_imgs_train.npy](./Train_HE/he_imgs_train.npy)
     * [he_imgs_mask_train.npy](./Train_HE/he_imgs_mask_train.npy)
