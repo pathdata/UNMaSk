@@ -6,13 +6,13 @@ UNMaSk pipeline consists of processing pipelines for segmentation of ductal carc
 
 
 ### UNMaSk DCIS segmentation module tree
- * [HE_Tissue_Segmentation](./HE_tissue_seg)
+ * [HE_tissue_segmentation](./HE_tissue_seg)
 
  * [DCIS segmentation](./DCIS)
  
  * [HE_cell_classification](./HE_cell_classification/predict)
  
- * [HE_Cell_detection](./IHC_Cell_Detection)
+ * [HE_cell_detection](./IHC_Cell_Detection)
     
 
 
