@@ -3,10 +3,18 @@
 
 
 UNMaSk pipeline consists of processing pipelines for segmentation of ductal carcinoma in situ (DCIS) regions from whole slide images. The primary steps are broken down into four modules and are as given below.
-1. Tissue Segmentation (HE_tissue_seg)
-2. Cell Detection      (Cell_Detection)
-3. Cell Classification (HE_cell_classification)
-4. Ductal carcinoma in situ Segmentation (organised in DCIS)
+
+
+### UNMaSk DCIS segmentation module tree
+ * [HE_Tissue_Segmentation](./HE_tissue_seg)
+
+ * [DCIS segmentation](./DCIS)
+ 
+ * [HE_cell_classification](./HE_cell_classification)
+ 
+ * [HE_Cell_detection](./IHC_Cell_Detection)
+    
+
 
 Modular arrangement help in navigation to each module and supports both tile level and tissue level processing. Each of these pipelines are organised inside individual directory and you will be able to find detailed explanation in the respective sub-directories. Wherever possible docker images and command line instructions are specified to make it user friendly for off the shelf users.
 
@@ -59,17 +67,8 @@ https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/DCIS/TrainData/ov
 
 </div>
 
-# UNMaSk DCIS segmentation module tree
 
- * [DCIS](./DCIS)
- * [HE_Tissue_Seg](./HE_tissue_seg)
- * [HE_cell_classification](./HE_cell_classification)
- * [cell_detection](./IHC_Cell_Detection)
-    
  
-
-
-
 # Citation
 
 https://doi.org/10.1038/s41523-020-00205-5
