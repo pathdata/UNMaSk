@@ -34,7 +34,7 @@ Modular arrangement help in navigation to each module and supports both tile lev
  
 <p align="center">
   
-   <img src="environment/Fig2_ab_Revised_v1.png" width="550" height="550"/>
+   <img src="environment/Fig2_ab_Revised_v1.png" width="350" height="350"/>
    <figcaption> Figure 2. a. Schematic of IM-Net architecture for DCIS segmentation b. Schematic of DRDIN cell detection network. </figcaption>
  </p>
   
