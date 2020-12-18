@@ -1,7 +1,16 @@
 ## UNMaSk: Unmasking the immune microecology of ductal carcinoma in situ with deep learning.
 
+## Tissue Segmentation
 
-### Parameters of train and predict for tissue segmentation pipeline
+This pipeline will delineate the tissue from the background. 
+
+Tree structure of tissue segmentation pipeline 
+
+<p align="center">
+  <img src="Train_HE/tree_HE_Tissue_Seg.png" width="450" height="450"/>
+ </p>
+ 
+### Parameters used for training and prediction for tissue segmentation pipeline
 
 Command line arguments for Training
 
