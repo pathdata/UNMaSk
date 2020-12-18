@@ -21,7 +21,7 @@ This pipeline will delineate the tissue from the background.
    * [slidingpatches.py](./dir2/slidingpatches.py)
    * [train_HE_BLInception_unet.py](./dir2/train_HE_BLInception_unet.py)
  * [model](./model_HE_Inception_unet)
-    * [model-tissue-seg.h5](./dir2/model-tissue-seg.h5)    
+    * [model-tissue-seg.h5](./model_HE_Inception_unet/model-tissue-seg.h5)    
  * [WSI](./WSI)
     * [HE_S.svs](./WSI/HE_S.svs)
  * [main.py](./main.py)
