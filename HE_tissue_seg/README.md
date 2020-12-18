@@ -6,13 +6,9 @@ This pipeline will delineate the tissue from the background.
 
 Tree structure of tissue segmentation pipeline 
 
-<p align="left">
-  <img src="Train_HE/tree_HE_Tissue_Seg.png" width="450" height="450"/>
- </p>
-
 # Project tree
 
- * [tree-md](./tree-md)
+ * [Tissue Segmentation](./HE_tissue_seg)
  * [dir2](./dir2)
    * [file21.ext](./dir2/file21.ext)
    * [file22.ext](./dir2/file22.ext)
