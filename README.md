@@ -33,7 +33,7 @@ colocalisation/Morisita Score (MS) spatial analysis. </figcaption>
   
 
 
-## Training Data
+## Training Data and annotations used in DCIS segmentation
 
 a. Images used for training
 https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/CIS/TrainData (Left)
