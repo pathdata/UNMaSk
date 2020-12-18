@@ -6,9 +6,25 @@ This pipeline will delineate the tissue from the background.
 
 Tree structure of tissue segmentation pipeline 
 
-<p align="center">
+<p align="left">
   <img src="Train_HE/tree_HE_Tissue_Seg.png" width="450" height="450"/>
  </p>
+ 
+$ ./tree-md .
+# Project tree
+
+.
+ * [tree-md](./tree-md)
+ * [dir2](./dir2)
+   * [file21.ext](./dir2/file21.ext)
+   * [file22.ext](./dir2/file22.ext)
+   * [file23.ext](./dir2/file23.ext)
+ * [dir1](./dir1)
+   * [file11.ext](./dir1/file11.ext)
+   * [file12.ext](./dir1/file12.ext)
+ * [file_in_root.ext](./file_in_root.ext)
+ * [README.md](./README.md)
+ * [dir3](./dir3)
  
 ### Parameters used for training and prediction for tissue segmentation pipeline
 
