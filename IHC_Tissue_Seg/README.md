@@ -19,7 +19,7 @@
     * [model-tissue-seg.h5](./dir2/model-tissue-seg.h5)    
  * [main.py](./main.py)
  * [requirements.txt](./requirement.txt)
- * [Dockerfile](./requirement.txt)
+ * [Dockerfile](./Dockerfile)
  * [README.md](./README.md)
 
 
