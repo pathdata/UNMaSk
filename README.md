@@ -59,6 +59,15 @@ https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/DCIS/TrainData/ov
 
 </div>
 
+# UNMaSk DCIS segmentation module tree
+
+ * [DCIS](./DCIS)
+ * [HE_Tissue_Seg](./HE_tissue_seg)
+ * [HE_cell_classification](./HE_cell_classification)
+ * [cell_detection](./IHC_Cell_Detection)
+    
+ 
+
 
 
 # Citation
