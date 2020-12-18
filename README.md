@@ -22,7 +22,7 @@ Modular arrangement help in navigation to each module and supports both tile lev
 
 
 <p align="center">
-  <img src="environment/gt_Fig1a.png" width="400" height="400"/>
+  <img src="environment/gt_Fig1a.png" width="200" height="200"/>
    <figcaption> Figure 1. Overview schematic of UNMaSk pipeline for DCIS segmentation UNet architecture for tissue segmentation and one
    of the existing deep learning methods, single-shot detector (SSD) architecture, used for DCIS detection.
  </p>
