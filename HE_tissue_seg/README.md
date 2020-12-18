@@ -13,6 +13,8 @@ Tree structure of tissue segmentation pipeline
    * [file21.ext](./dir2/file21.ext)
    * [file22.ext](./dir2/file22.ext)
    * [file23.ext](./dir2/file23.ext)
+ * [model](./model_HE_Inception_unet)
+    * [model-tissue-seg.h5](./dir2/model-tissue-seg.h5)
  * [Test](./Test)
    * [file11.ext](./dir1/file11.ext)
    * [file12.ext](./dir1/file12.ext)
