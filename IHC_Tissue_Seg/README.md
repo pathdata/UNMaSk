@@ -1,4 +1,26 @@
-# UNMaSk: Unmasking the immune microecology of ductal carcinoma in situ with deep learning.
+## UNMaSk: Unmasking the immune microecology of ductal carcinoma in situ with deep learning.
+
+# Tissue segmentation module tree
+
+ * [IHC Tissue Segmentation](./IHC_tissue_seg)
+ * [TestImages](./TestImages)
+    
+ * [Train_IHC](./Train_IHC)
+    * [imgs_train.npy](./dir1/imgs_train.npy)
+    * [imgs_mask_train.npy](./dir1/imgs_mask_train.npy)
+    * [imgs_mask_valid.npy](./dir/imgs_mask_valid.npy)
+    * [imgs_valid.npy](./dir1/imgs_valid.npy)
+ * [scripts](./scripts)
+   * [predict_IHC_Inception_unet.py](./dir2/predict_IHC_Inception_unet.py)
+   * [predict_parser.py](./dir2/predict_parser.py)
+   * [slidingpatches.py](./dir2/slidingpatches.py)
+   * [train_IHC_BLInception_unet.py](./dir2/train_IHC_BLInception_unet.py)
+ * [model](./model_HE_Inception_unet)
+    * [model-tissue-seg.h5](./dir2/model-tissue-seg.h5)    
+ * [main.py](./main.py)
+ * [requirements.txt](./requirement.txt)
+ * [Dockerfile](./requirement.txt)
+ * [README.md](./README.md)
 
 
 ### Parameters of train and predict for tissue segmentation pipeline
