@@ -28,7 +28,7 @@ Modular arrangement help in navigation to each module and supports both tile lev
  </p>
  
  <p align="center">
- <img src="environment/gt_Fig2.png" width="250" height="250"/>
+ <img src="environment/gt_Fig2.png" width="150" height="150"/>
 <figcaption> Spatial Voronoi tessellation to examine local tissue ecology for each DCIS duct, based on deep learning results on DCIS segmentation and single-cell classification. Examples shown are immune depleted and immune predominant/inflamed ecology local to individual DCIS ducts from the DCIS immune colocalisation/Morisita Score (MS) spatial analysis. </figcaption>
  </p>
  
