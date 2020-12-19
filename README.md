@@ -22,13 +22,13 @@ Modular arrangement help in navigation to each module and supports both tile lev
 
 
 <p align="center">
-  <img src="environment/gt_Fig1a.png" width="350" height="350"/>
+  <img src="environment/gt_Fig1.png" width="350" height="350"/>
    <figcaption> Overview schematic of UNMaSk pipeline for DCIS segmentation UNet architecture for tissue segmentation and one
    of the existing deep learning methods, single-shot detector (SSD) architecture, used for DCIS detection.
  </p>
  
  <p align="center">
- <img src="environment/gt_Fig1b.png" width="250" height="250"/>
+ <img src="environment/gt_Fig2.png" width="250" height="250"/>
 <figcaption> Spatial Voronoi tessellation to examine local tissue ecology for each DCIS duct, based on deep learning results on DCIS segmentation and single-cell classification. Examples shown are immune depleted and immune predominant/inflamed ecology local to individual DCIS ducts from the DCIS immune colocalisation/Morisita Score (MS) spatial analysis. </figcaption>
  </p>
  
