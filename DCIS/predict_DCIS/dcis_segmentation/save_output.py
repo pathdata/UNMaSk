@@ -48,7 +48,9 @@ def run(opts_in):
     print('---------------------------------------------------------------\n', flush=True)
 
     if opts_in.sub_dir_name is None:
+        
         network.generate_output(opts=opts_in)
+
     else:
         network.generate_output_sub_dir(opts=opts_in, sub_dir_name=opts_in.sub_dir_name)
 
