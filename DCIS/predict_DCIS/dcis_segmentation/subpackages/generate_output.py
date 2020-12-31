@@ -1,57 +1,53 @@
 import tensorflow as tf
 import glob
 import os
-import matlab.engine
+#import matlab.engine
 import numpy as np
 import scipy.io as sio
 import time
 from datetime import datetime
+import cv2
 
 from dcis_segmentation.subpackages import Patches
 
 
 def make_sub_dirs(opts, sub_dir_name):
+
     if not os.path.isdir(os.path.join(opts.results_dir, 'mat', sub_dir_name)):
         os.makedirs(os.path.join(opts.results_dir, 'mat', sub_dir_name))
 
-    if not os.path.isdir(os.path.join(opts.results_dir, 'pre_processed', sub_dir_name)):
-        os.makedirs(os.path.join(opts.results_dir, 'pre_processed', sub_dir_name))
-
-    if not os.path.isdir(os.path.join(opts.results_dir, 'pre_processed', sub_dir_name)):
-        os.makedirs(os.path.join(opts.results_dir, 'pre_processed', sub_dir_name))
-
-    if not os.path.isdir(os.path.join(opts.results_dir, 'csv', sub_dir_name)):
-        os.makedirs(os.path.join(opts.results_dir, 'csv', sub_dir_name))
+    if not os.path.isdir(os.path.join(opts.results_dir, 'mask_image', sub_dir_name)):
+        os.makedirs(os.path.join(opts.results_dir, 'mask_image', sub_dir_name))
 
     if not os.path.isdir(os.path.join(opts.results_dir, 'annotated_images')):
         os.makedirs(os.path.join(opts.results_dir, 'annotated_images'))
 
 
-def pre_process_images(opts, sub_dir_name, eng=None):
-    if eng is None:
-        eng = matlab.engine.start_matlab()
-        eng.addpath('dcis_segmentation')
-        eng.eval('run initialize_matlab_variables.m', nargout=0)
-
-    make_sub_dirs(opts, sub_dir_name)
-    if opts.pre_process:
-        matlab_input = {'input_path': os.path.join(opts.data_dir, sub_dir_name),
-                        'feat': ['rgb'],
-                        'output_path': opts.preprocessed_dir,
-                        'sub_dir_name': sub_dir_name,
-                        'tissue_segment_dir': opts.tissue_segment_dir}
-        eng.pre_process_images(matlab_input, nargout=0)
-
-
-def post_process_images(opts, sub_dir_name, eng=None):
-    if eng is None:
-        eng = matlab.engine.start_matlab()
-        eng.addpath('dcis_segmentation')
-        eng.eval('run initialize_matlab_variables.m', nargout=0)
-
-    make_sub_dirs(opts, sub_dir_name)
-    eng.save_segmentation_output_p(opts.results_dir, sub_dir_name, os.path.join(opts.data_dir, sub_dir_name),
-                                   nargout=0)
+# def pre_process_images(opts, sub_dir_name, eng=None):
+#     if eng is None:
+#         eng = matlab.engine.start_matlab()
+#         eng.addpath('dcis_segmentation')
+#         eng.eval('run initialize_matlab_variables.m', nargout=0)
+#
+#     make_sub_dirs(opts, sub_dir_name)
+#     if opts.pre_process:
+#         matlab_input = {'input_path': os.path.join(opts.data_dir, sub_dir_name),
+#                         'feat': ['rgb'],
+#                         'output_path': opts.preprocessed_dir,
+#                         'sub_dir_name': sub_dir_name,
+#                         'tissue_segment_dir': opts.tissue_segment_dir}
+#         eng.pre_process_images(matlab_input, nargout=0)
+#
+#
+# def post_process_images(opts, sub_dir_name, eng=None):
+#     if eng is None:
+#         eng = matlab.engine.start_matlab()
+#         eng.addpath('dcis_segmentation')
+#         eng.eval('run initialize_matlab_variables.m', nargout=0)
+#
+#     make_sub_dirs(opts, sub_dir_name)
+#     eng.save_segmentation_output_p(opts.results_dir, sub_dir_name, os.path.join(opts.data_dir, sub_dir_name),
+#                                    nargout=0)
 
 
 def generate_network_output(opts, sub_dir_name, network, sess, logits):
@@ -110,6 +106,13 @@ def generate_network_output(opts, sub_dir_name, network, sess, logits):
             mat_file_name = file_name + '.mat'
             sio.savemat(os.path.join(opts.results_dir, 'mat', sub_dir_name, mat_file_name), mat)
 
+            mat_output = sio.loadmat(os.path.join(opts.results_dir, 'mat', sub_dir_name, mat_file_name))
+            DCIS_prob = mat_output['output'][:, :, 1] > 0.2
+
+            DCIS_mask = DCIS_prob.astype(np.uint8)*255
+            cv2.imwrite(os.path.join(opts.results_dir, 'mask_image', sub_dir_name, file_name + '.png'), DCIS_mask)
+
+
             duration = time.time() - start_time
             format_str = (
                 '%s: file %d/ %d, (%.2f sec/file)')
@@ -124,9 +127,9 @@ def generate_output(network, opts, save_pre_process=True, network_output=True, p
 
     saver = tf.train.Saver(tf.global_variables(), max_to_keep=opts.num_of_epoch)
 
-    eng = matlab.engine.start_matlab()
-    eng.addpath('dcis_segmentation')
-    eng.eval('run initialize_matlab_variables.m', nargout=0)
+    # eng = matlab.engine.start_matlab()
+    # eng.addpath('dcis_segmentation')
+    # eng.eval('run initialize_matlab_variables.m', nargout=0)
 
     with tf.Session() as sess:
 
@@ -138,21 +141,23 @@ def generate_output(network, opts, save_pre_process=True, network_output=True, p
         print('---------------------------------------------------------------', flush=True)
         print('---------------------------------------------------------------', flush=True)
         print('Checkpoint file found at ' + ckpt.model_checkpoint_path)
-        print('---------------------------------------------------------------\n', flush=True)
+        print('---------------------------------------------------------------', flush=True)
+        print('---------------------------------------------------------------', flush=True)
+        print('---------------------------------------------------------------', flush=True)
 
         for cws_n in range(0, len(cws_sub_dir)):
             curr_cws_sub_dir = cws_sub_dir[cws_n]
             print(curr_cws_sub_dir)
             sub_dir_name = os.path.basename(os.path.normpath(curr_cws_sub_dir))
-            if save_pre_process:
-                pre_process_images(opts=opts, sub_dir_name=sub_dir_name, eng=eng)
+            # if save_pre_process:
+            #     pre_process_images(opts=opts, sub_dir_name=sub_dir_name, eng=eng)
 
             if network_output:
                 generate_network_output(opts=opts, sub_dir_name=sub_dir_name, network=network,
                                         sess=sess, logits=logits)
 
-            if post_process:
-                post_process_images(opts=opts, sub_dir_name=sub_dir_name, eng=eng)
+            # if post_process:
+            #     post_process_images(opts=opts, sub_dir_name=sub_dir_name, eng=eng)
 
     return opts.results_dir
 
@@ -173,18 +178,20 @@ def generate_output_sub_dir(network, opts, sub_dir_name, save_pre_process=True, 
         print('---------------------------------------------------------------', flush=True)
         print('Checkpoint file found at ' + ckpt.model_checkpoint_path)
         print('---------------------------------------------------------------\n', flush=True)
+        print('---------------------------------------------------------------\n', flush=True)
+        print('---------------------------------------------------------------\n', flush=True)
 
-        eng = matlab.engine.start_matlab()
-        eng.addpath('dcis_segmentation')
-        eng.eval('run initialize_matlab_variables.m', nargout=0)
-        if save_pre_process:
-            pre_process_images(opts=opts, sub_dir_name=sub_dir_name, eng=eng)
+        # eng = matlab.engine.start_matlab()
+        # eng.addpath('dcis_segmentation')
+        # eng.eval('run initialize_matlab_variables.m', nargout=0)
+        # if save_pre_process:
+        #     pre_process_images(opts=opts, sub_dir_name=sub_dir_name, eng=eng)
 
         if network_output:
             generate_network_output(opts=opts, sub_dir_name=sub_dir_name, network=network,
                                     sess=sess, logits=logits)
 
-        if post_process:
-            post_process_images(opts=opts, sub_dir_name=sub_dir_name, eng=eng)
+        # if post_process:
+        #     post_process_images(opts=opts, sub_dir_name=sub_dir_name, eng=eng)
 
     return opts.results_dir
