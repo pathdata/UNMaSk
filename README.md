@@ -39,12 +39,10 @@ Modular arrangement help in navigation to each module and supports both tile lev
  </p>
  
  <p align="center">
-  
- <figure>
-  
+    
    <img src="environment/Fig2_b.png" width="250" height="50"/>
    <figcaption> Schematic of DRDIN cell detection network </figcaption>
- </figure>
+ 
  </p>
   
 
