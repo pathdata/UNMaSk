@@ -42,11 +42,13 @@ Modular arrangement help in navigation to each module and supports both tile lev
  <p align="center">
     
    <img src="environment/Fig2_b.png" width="250" height="50"/>
-   <center>Center this text DRDIN!</center>
+   
    <figcaption> Schematic of DRDIN cell detection network 
        </figcaption>
  
  </p>
+ 
+ <center>Center this text DRDIN!</center>
   
 
 
