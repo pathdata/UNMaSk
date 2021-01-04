@@ -4,6 +4,10 @@
 
 UNMaSk pipeline consists of processing pipelines for segmentation of ductal carcinoma in situ (DCIS) regions from whole slide images. The primary steps are broken down into four modules and are as given below.
 
+### Background
+Ductal carcinoma in situ (DCIS) is a non-obligatory precursor of invasive ductal carcinoma (IDC). It is the most common mammographically detected breast cancer, however, predicting DCIS progression to IDC remains a major clinical challenge. A recent study has categorised DCIS evolution to IDC into four models, highlighting its heterogeneity. The evolutionary potential of individual DCIS ductules/ducts may dramatically differ, determined by not only their genetic mutations but also microenvironmental
+selective pressure. However, given the complex spatial ductule structure, ecological dynamics between individual DCIS ducts and their surrounding microenvironment are difficult to measure by eye. These ultimately limits our ability to study the influence of the microenvironment on tumour evolution and progression.
+
 
 ### UNMaSk DCIS segmentation module tree
  * [HE_tissue_segmentation](./HE_tissue_seg)
