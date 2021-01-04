@@ -31,4 +31,6 @@ https://hub.docker.com/r/nrypri001docker/tfcpu
 #tissue_segment_dir-> tissue_segmentation_result_path
 #file_name_pattern -> *.svs(WSI slide extension obtained from the prefix or extension suffix)
 
+### Command line arguments for prediction
+
 ``` predict_Local.py --exp_dir=exp_dir --data_dir=data_dir --results_dir=results_dir     --detection_results_path=detection_results_path        --tissue_segment_dir=tissue_segment_dir --file_name_pattern=file_name_pattern ```
