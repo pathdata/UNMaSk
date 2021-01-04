@@ -1,7 +1,7 @@
 
 # Workflow of DCIS segmentation
 
-### 1. Data Preparation  
+### 1. Data preparation  
 
 1. IM-Net uses free hand annotation masks collected exhaustively by ensuring no regions being missed in each represented tile.
 2. Mat files are generated subsequently. 
@@ -13,7 +13,7 @@
 
 1. Predict output on test images based on the inference file generated in exp_dir during training
 
-### 3. Run Spatial analysis after stitching the tiled output and generate Morisita score for each slide.
+### 3. Run spatial analysis after stitching the tiled output and generate Morisita score for each slide.
 
 1. Voronoi maps are generated and the cell co-ordinates within each polygon is used to compute Morisita score between epithelial cell and lymphocyte.
 
