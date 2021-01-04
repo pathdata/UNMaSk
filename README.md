@@ -34,7 +34,7 @@ Modular arrangement help in navigation to each module and supports both tile lev
  
 <p align="center">
   
-   <img src="environment/Fig2_a.png" width="350" height="350"/>
+   <img src="environment/Fig2_a.png" width="350" height="250"/>
    <figcaption> Schematic of IM-Net architecture for DCIS segmentation </figcaption>
  </p>
   
