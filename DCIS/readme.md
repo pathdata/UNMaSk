@@ -1,5 +1,5 @@
 
-# Workflow of DCIS segmentation
+#  DCIS segmentation workflow
 
 ### 1. Data preparation  
 
