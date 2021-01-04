@@ -1,5 +1,0 @@
-from sccnn_classifier import subpackages
-from sccnn_classifier import featuremap_visualization
-from sccnn_classifier import save_output
-from sccnn_classifier import sccnn_classifier
-from sccnn_classifier import train
