@@ -1,5 +1,5 @@
 ## HE cell detection pipeline
 
-1. Cells are trained using distance regularized dense inception network.
+This pipeline will detect cell from the given tiles using trained distance regularized dense inception network.
 
 
