@@ -9,7 +9,7 @@
 4. Convert the mat files to single tfrecord file for training and validation.
 
 
-### 2. Run prediction on the test images in predict_CIS directory using generate_output_DCIS.py script
+### 2. Run prediction on the test images in predict_DCIS directory using generate_output_DCIS.py script
 
 1. Predict output on test images based on the inference file generated in exp_dir during training
 
