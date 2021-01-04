@@ -1,6 +1,6 @@
-# HE Cell Classification pipeline in tensorflow1p4 environment
+## HE Cell Classification pipeline 
 
-Cells are trained using Supervised CNN and the ensemble classification determines the final output class probability of the cell.
+Cells are trained using Supervised CNN and the ensemble classification determines the final output class probability of the single cells.
 
 Cell class used for classification are epithelial cell, stromal cell, lymphocyte and other cell. The color codes are present in the `HE_Fib_Lym_Tum_Others.csv`.
 
@@ -11,18 +11,18 @@ https://github.com/pathdata/UNMaSk/tree/master/HE_cell_classification/train/cell
 
 Please reference the citation if the code is used completely or partially in your work.
 
-# Docker container
+## Docker container
 
-## Docker image for GPU environment
+### Docker image for GPU environment
 Tensorflow GPU container -> docker://nrypri001docker/tf1p4:IHCv1                          
 
-## Docker image for CPU environment
+### Docker image for CPU environment
 Tensorflow CPU container -> docker://nrypri001docker/tfcpu:HEv1
 
-## Publicly accessible webpage for cpu environment
+### Publicly accessible webpage for cpu environment
 https://hub.docker.com/r/nrypri001docker/tfcpu
 
-## Parameters for prediction of classification
+### Parameters for prediction of classification
 
 #exp_dir-> checkpoint_path                        
 #data_dir-> cws_path                               
