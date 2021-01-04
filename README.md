@@ -34,7 +34,7 @@ Modular arrangement help in navigation to each module and supports both tile lev
  
 <p align="center">
   
-   <img src="environment/Fig2_a.png" width="350" height="250"/>
+   <img src="environment/Fig2_a.png" width="350" height="200"/>
    <figcaption> Schematic of IM-Net architecture for DCIS segmentation </figcaption>
  </p>
  
@@ -47,7 +47,7 @@ Modular arrangement help in navigation to each module and supports both tile lev
   
 
 
-## Training Data and annotations used in DCIS segmentation
+## Training data and annotations used in DCIS segmentation
 
 a. Images used for training
 https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/DCIS/TrainData (Left)
