@@ -47,7 +47,7 @@ Modular arrangement help in navigation to each module and supports both tile lev
   
 
 
-## Training data and annotations used in DCIS segmentation
+### Training data and annotations used in DCIS segmentation
 
 a. Images used for training
 https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/DCIS/TrainData (Left)
@@ -58,7 +58,7 @@ https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/DCIS/TrainData/ma
 c. Overlay of groundtruth on the training image
 https://github.com/pathdata/HE_Tissue_Segmentation/tree/master/DCIS/TrainData/overlay (Right)
 
-## Illustrative training images for DCIS segmentation based on IM-NET
+### Illustrative training images for DCIS segmentation based on IM-NET
 
 <div class="items">
 <figure>
