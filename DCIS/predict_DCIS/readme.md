@@ -1,6 +1,6 @@
 ## DCIS Segmentation using IM-Net
 
-This pipeline will delineate the DCIS from the tiled image.
+This pipeline will segment DCIS from the tiled image.
 
 ### Docker image 
 
