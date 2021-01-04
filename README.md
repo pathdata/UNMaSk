@@ -20,7 +20,7 @@ and DCIS samples derived from IDC patients (adjacent DCIS, as a surrogate for po
  
  * [HE_cell_classification](./HE_cell_classification/predict)
  
- * [HE_cell_detection](./IHC_Cell_Detection)
+ * [HE_cell_detection](./HE_cell_detection)
     
 
 
