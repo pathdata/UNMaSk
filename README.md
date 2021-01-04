@@ -48,7 +48,7 @@ Modular arrangement help in navigation to each module and supports both tile lev
  
  </p>
  
-<p style="text-align:center">This text will be centered!</p>
+###<p style="text-align:center">This text will be centered!</p>
   
 
 
