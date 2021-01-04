@@ -1,4 +1,4 @@
-## HE Cell Classification pipeline 
+## HE cell classification pipeline 
 
 Cells are trained using Supervised CNN and the ensemble classification determines the final output class probability of the single cells.
 
