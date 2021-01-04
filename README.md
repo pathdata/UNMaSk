@@ -48,7 +48,7 @@ Modular arrangement help in navigation to each module and supports both tile lev
  
  </p>
  
- <center>Center this text DRDIN!</center>
+<p style="text-align:center">This text will be centered!</p>
   
 
 
