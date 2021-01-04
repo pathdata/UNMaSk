@@ -2,7 +2,7 @@
 """
 Created on Sat Oct 29 12:45:31 2019
 
-@author: pnarayanan
+@: pnarayanan
 """
 from inference_architecture.celldetect import get_Inception_unet
 from skimage import io
@@ -15,7 +15,7 @@ from scipy import ndimage as ndi
 from skimage.feature import peak_local_max
 import cv2
 import multiprocessing as mp
-from skimage.morphology import dilation,erosion,disk
+from skimage.morphology import dilation,,disk
 import os
 #import matplotlib.pyplot as plt
 from scipy.ndimage import measurements
@@ -341,7 +341,7 @@ if __name__=='__main__':
 
 
 
-    params = {'model_weight_dir': os.path.join(checkpoints_filepath, 'get_cnn_Distance_Lr_0.0001_Dice_weights.h5'),        # model name
+    params = {'model_weight_dir': os.path.join(checkpoints_filepath, 'he_model.h5'),        # model name
 
               'input_dir':  r'cws',                   # cws_path
               'cws_mask': None,
