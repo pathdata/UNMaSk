@@ -91,3 +91,6 @@ https://github.com/pathdata/UNMaSk/tree/master/HE_Data/TransATAC/TA_mask
 
 Data preparation and implementation codes are maintained in this repository and will be periodically updated. Please contact the corresponding authours for future colloborations and any queries regarding the implementation.
 
+#### Note
+Source code is available in this repository and tested with the packaged docker image for tissue segmentation.
+
