@@ -1,1 +1,0 @@
-# IHC Cell Detection model
