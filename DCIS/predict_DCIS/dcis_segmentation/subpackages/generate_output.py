@@ -7,6 +7,7 @@ import scipy.io as sio
 import time
 from datetime import datetime
 import cv2
+import math
 
 from dcis_segmentation.subpackages import Patches
 
@@ -23,31 +24,86 @@ def make_sub_dirs(opts, sub_dir_name):
         os.makedirs(os.path.join(opts.results_dir, 'annotated_images'))
 
 
-# def pre_process_images(opts, sub_dir_name, eng=None):
-#     if eng is None:
-#         eng = matlab.engine.start_matlab()
-#         eng.addpath('dcis_segmentation')
-#         eng.eval('run initialize_matlab_variables.m', nargout=0)
-#
-#     make_sub_dirs(opts, sub_dir_name)
-#     if opts.pre_process:
-#         matlab_input = {'input_path': os.path.join(opts.data_dir, sub_dir_name),
-#                         'feat': ['rgb'],
-#                         'output_path': opts.preprocessed_dir,
-#                         'sub_dir_name': sub_dir_name,
-#                         'tissue_segment_dir': opts.tissue_segment_dir}
-#         eng.pre_process_images(matlab_input, nargout=0)
-#
-#
-# def post_process_images(opts, sub_dir_name, eng=None):
-#     if eng is None:
-#         eng = matlab.engine.start_matlab()
-#         eng.addpath('dcis_segmentation')
-#         eng.eval('run initialize_matlab_variables.m', nargout=0)
-#
-#     make_sub_dirs(opts, sub_dir_name)
-#     eng.save_segmentation_output_p(opts.results_dir, sub_dir_name, os.path.join(opts.data_dir, sub_dir_name),
-#                                    nargout=0)
+
+def calculate_magnitude(od):
+    channel = cv2.split(od)
+    square_b = cv2.pow(channel[0], 2)
+    square_g = cv2.pow(channel[1], 2)
+    square_r = cv2.pow(channel[2], 2)
+    square_bgr = square_b + square_g + square_r
+    magnitude = cv2.sqrt(square_bgr)
+
+    return magnitude;
+
+
+def normaliseOD(od, magnitude):
+    channels = cv2.split(od)  # , (channels[0],channels[1],channels[2]))
+
+    od_norm_b = cv2.divide(channels[0], magnitude);
+    od_norm_g = cv2.divide(channels[1], magnitude);
+    od_norm_r = cv2.divide(channels[2], magnitude);
+
+    od_norm = cv2.merge((od_norm_b, od_norm_g, od_norm_r))
+
+    return od_norm;
+
+def clean_artifact(cws_img, image_path_full):
+
+    I = cws_img.transpose()
+    k, width, height = I.shape
+    I = I.reshape(k, width * height);
+    I = np.float32(I)
+
+    od = cv2.max(I, 1)
+
+    grey_angle = 0.2;
+
+    magnitude_threshold = 0.05;
+
+    channels = cv2.split(od);
+    #
+    magnitude = np.zeros(od.shape)
+    #
+    background = 245
+    #
+    channels[0] /= background
+
+    od = cv2.merge(channels)
+
+    od = cv2.log(od)
+
+    od *= (1 / cv2.log(10)[0])
+
+    od = -od
+    od = od.reshape(3, width, height).transpose()
+    magnitude = calculate_magnitude(od)
+
+    tissue_and_artefact_mask = (magnitude > magnitude_threshold);
+
+    od_norm = normaliseOD(od, magnitude);
+
+    chan = cv2.split(od_norm)
+
+    grey_mask = (chan[0] + chan[1] + chan[2]) >= (math.cos(grey_angle) * cv2.sqrt(3)[0])
+
+    other_colour_mask = (chan[2] > chan[1]) | (chan[0] > chan[1])
+
+    mask = grey_mask | other_colour_mask
+
+    mask = (255 - mask) & tissue_and_artefact_mask
+    mask1 = mask.astype(np.int8)
+
+    clean = cv2.bitwise_and(cws_img, cws_img, mask=mask1)
+    clean = cv2.bitwise_not(clean)
+
+    clean = cv2.bitwise_and(clean, clean, mask=mask1)
+    clean = cv2.bitwise_not(clean)
+
+    write_mask1 = mask.astype(np.uint8)*255
+
+    
+    return (clean,write_mask1)
+
 
 
 def generate_network_output(opts, sub_dir_name, network, sess, logits):
@@ -112,6 +168,14 @@ def generate_network_output(opts, sub_dir_name, network, sess, logits):
             DCIS_mask = DCIS_prob.astype(np.uint8)*255
             cv2.imwrite(os.path.join(opts.results_dir, 'mask_image', sub_dir_name, file_name + '.png'), DCIS_mask)
 
+            cws_img = cv2.imread(image_path_full)
+            # img = cv2.imread(os.path.join(input_dir, im))
+            img, mask = clean_artifact(cws_img, image_path_full)
+            cv2.imwrite(os.path.join(opts.results_dir, 'mask_image', sub_dir_name, file_name + '_post.png'), img)
+
+
+            post_img_mask = cv2.bitwise_and(mask,DCIS_mask)
+            cv2.imwrite(os.path.join(opts.results_dir, 'mask_image', sub_dir_name, file_name + '_postmask.png'), post_img_mask)
 
             duration = time.time() - start_time
             format_str = (
