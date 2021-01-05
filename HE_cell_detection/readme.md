@@ -9,6 +9,10 @@ docker://nrypri001docker/tf:tsv1
 https://hub.docker.com/repository/docker/nrypri001docker/tf
 
 
-Command line arguments for Prediction
+#### Command line arguments for Prediction
 
-python HPC_generate_output.py
+--------------------------------------------------------------------------------------------------------------------------
+
+ HPC_generate_output.py
+ 
+--------------------------------------------------------------------------------------------------------------------------
