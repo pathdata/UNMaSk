@@ -39,11 +39,9 @@ This pipeline will delineate the tissue from the background.
 
 https://hub.docker.com/repository/docker/nrypri001docker/tf
 
-### Parameters used for training and prediction for tissue segmentation pipeline
+### Parameters used for prediction of tissue segmentation on test images
 
-Command line arguments for Training
-
-``` main.py --batch_size=4 --epochs=100 --mode=train```
+--------------------------------------------------------------------------------------------------------------------------
 
 Command line arguments for Prediction
 
@@ -55,6 +53,14 @@ command line arguments example
 
 
 ` main_WSI.py --model=model_HE_Inception_unet --test=WSI --result=output --mode=WSI_test`
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Command line arguments for Training
+
+``` main.py --batch_size=4 --epochs=100 --mode=train```
+
+
 
 Running tissue segmentation
 usage: main.py [-h] [-model MODEL] [-test TEST] [-result RESULT] [-mode MODE]
