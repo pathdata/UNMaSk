@@ -19,6 +19,17 @@
 1. Voronoi maps are generated and the cell co-ordinates within each polygon is used to compute Morisita score between epithelial cell and lymphocyte.
 
 
+#### Disclaimer
+--------------------------------------------------------------------------------------------------------------------------
+
+    The software is provided 'as is' with no implied fitness for purpose. 
+    The author is exempted from any liability relating to the use of this software.  
+    The software is provided for research use only. 
+    The software is explicitly not licenced for re-distribution.
+    Cite the article if the codes are reused in part/whole.
+
+--------------------------------------------------------------------------------------------------------------------------
+
 
 
 
