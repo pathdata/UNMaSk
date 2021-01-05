@@ -22,14 +22,6 @@ Tensorflow CPU container -> docker://nrypri001docker/tfcpu:HEv1
 ### Publicly accessible webpage for cpu environment
 https://hub.docker.com/r/nrypri001docker/tfcpu
 
-### Parameters for prediction of classification
-
-#exp_dir-> checkpoint_path                        
-#data_dir-> cws_path                               
-#result_dir-> classification result_path                                    
-#detection_dir-> detection_path                                     
-#tissue_segment_dir-> tissue_segmentation_result_path
-#file_name_pattern -> *.svs(WSI slide extension obtained from the prefix or extension suffix)
 
 ### Command line arguments for prediction
 
@@ -38,3 +30,11 @@ https://hub.docker.com/r/nrypri001docker/tfcpu
 ``` predict_Local.py --exp_dir=exp_dir --data_dir=data_dir --results_dir=results_dir     --detection_results_path=detection_results_path        --tissue_segment_dir=tissue_segment_dir --file_name_pattern=file_name_pattern ```
 
 --------------------------------------------------------------------------------------------------------------------------
+
+#exp_dir-> checkpoint_path                        
+#data_dir-> cws_path                               
+#result_dir-> classification result_path                                    
+#detection_dir-> detection_path                                     
+#tissue_segment_dir-> tissue_segmentation_result_path
+#file_name_pattern -> *.svs(WSI slide extension obtained from the prefix or extension suffix)
+
