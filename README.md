@@ -92,7 +92,7 @@ https://github.com/pathdata/UNMaSk/tree/master/DCIS/TrainData/overlay (Right)
 
 https://doi.org/10.1038/s41523-020-00205-5
 
-## Reference
+## Data availability
 
 All training data of carcinoma in situ regions that were annotated as a part of the project is made available in this github repository.
 Training data tiles were anonymised from raw HE image tiles. Request for data access for the Duke samples can be submitted to E.S.H and Y.Y
