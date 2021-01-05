@@ -90,7 +90,7 @@ https://github.com/pathdata/UNMaSk/tree/master/DCIS/TrainData/overlay (Right)
 
 ## Citation
 
-https://doi.org/10.1038/s41523-020-00205-5
+Priya Lakshmi Narayanan et al., (2020) Unmasking the immune microecology of ductal carcinoma in situ with deep learning. https://doi.org/10.1038/s41523-020-00205-5
 
 ## Data availability
 
