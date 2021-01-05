@@ -31,6 +31,14 @@ This pipeline will delineate the tissue from the background.
  * [README.md](./README.md)
  
  
+## Docker Container
+
+```docker://nrypri001docker/tf:tsv1 ```
+
+## Publicly accessible weblink
+
+https://hub.docker.com/repository/docker/nrypri001docker/tf
+
 ### Parameters used for training and prediction for tissue segmentation pipeline
 
 Command line arguments for Training
@@ -68,14 +76,6 @@ optional arguments:
                         
   `-epochs EPOCHS, --epochs EPOCHS            total number of epochs`
 
-
-## Docker Container
-
-```docker://nrypri001docker/tf:tsv1 ```
-
-## Publicly accessible weblink
-
-https://hub.docker.com/repository/docker/nrypri001docker/tf
 
 ## Citation
 
