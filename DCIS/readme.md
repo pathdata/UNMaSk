@@ -11,7 +11,8 @@
 
 ### 2. Run prediction on the test images in predict_DCIS directory using generate_output_DCIS.py script
 
-1. Predict output on test images based on the inference file generated in exp_dir during training
+1. Predict segmentation on test images based on the inference file generated in exp_dir during training.
+2. Details of docker and source codes on DCIS segmentation detailed in the repository (https://github.com/pathdata/UNMaSk/tree/master/DCIS/predict_DCIS)
 
 ### 3. Run spatial analysis after stitching the tiled output and generate Morisita score for each slide.
 
