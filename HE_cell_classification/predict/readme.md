@@ -9,7 +9,6 @@ https://github.com/pathdata/UNMaSk/blob/master/HE_cell_classification/train/cell
 
 https://github.com/pathdata/UNMaSk/tree/master/HE_cell_classification/train/cell_annotations/celllabels
 
-Please reference the citation if the code is used completely or partially in your work.
 
 ## Docker container
 
@@ -37,4 +36,8 @@ https://hub.docker.com/r/nrypri001docker/tfcpu
 #detection_dir-> detection_path                                     
 #tissue_segment_dir-> tissue_segmentation_result_path
 #file_name_pattern -> *.svs(WSI slide extension obtained from the prefix or extension suffix)
+
+##### Note
+Please cite the article if the code is used completely or partially in your work.
+
 
