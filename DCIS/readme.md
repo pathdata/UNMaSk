@@ -22,8 +22,8 @@
 #### Disclaimer
 --------------------------------------------------------------------------------------------------------------------------
 
-    The software is provided 'as is' with no implied fitness for purpose. 
-    The author is exempted from any liability relating to the use of this software.  
+    The software is provided 'as is' for research purpose. 
+    The  is exempted from any liability relating to the use of this software.  
     The software is provided for research use only. 
     The software is explicitly not licenced for re-distribution.
     Cite the article if the codes are reused in part/whole.
