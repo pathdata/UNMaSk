@@ -7,7 +7,7 @@ import scipy.io as sio
 import time
 from datetime import datetime
 import cv2
-import math
+import 
 
 from dcis_segmentation.subpackages import Patches
 
@@ -84,7 +84,7 @@ def clean_artifact(cws_img, image_path_full):
 
     chan = cv2.split(od_norm)
 
-    grey_mask = (chan[0] + chan[1] + chan[2]) >= (math.cos(grey_angle) * cv2.sqrt(3)[0])
+    grey_mask = (chan[0] + chan[1] + chan[2]) >= (.cos(grey_angle) * cv2.sqrt(3)[0])
 
     other_colour_mask = (chan[2] > chan[1]) | (chan[0] > chan[1])
 
@@ -166,16 +166,16 @@ def generate_network_output(opts, sub_dir_name, network, sess, logits):
             DCIS_prob = mat_output['output'][:, :, 1] > 0.2
 
             DCIS_mask = DCIS_prob.astype(np.uint8)*255
-            cv2.imwrite(os.path.join(opts.results_dir, 'mask_image', sub_dir_name, file_name + '.png'), DCIS_mask)
+            #cv2.imwrite(os.path.join(opts.results_dir, 'mask_image', sub_dir_name, file_name + '.png'), DCIS_mask)
 
             cws_img = cv2.imread(image_path_full)
             # img = cv2.imread(os.path.join(input_dir, im))
             img, mask = clean_artifact(cws_img, image_path_full)
-            cv2.imwrite(os.path.join(opts.results_dir, 'mask_image', sub_dir_name, file_name + '_post.png'), img)
+            #cv2.imwrite(os.path.join(opts.results_dir, 'mask_image', sub_dir_name, file_name + '_post.png'), img)
 
 
             post_img_mask = cv2.bitwise_and(mask,DCIS_mask)
-            cv2.imwrite(os.path.join(opts.results_dir, 'mask_image', sub_dir_name, file_name + '_postmask.png'), post_img_mask)
+            cv2.imwrite(os.path.join(opts.results_dir, 'mask_image', sub_dir_name, file_name + '.png'), post_img_mask)
 
             duration = time.time() - start_time
             format_str = (
