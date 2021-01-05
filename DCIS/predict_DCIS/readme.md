@@ -6,6 +6,7 @@ This pipeline will segment DCIS from the tiled image.
 
 https://hub.docker.com/repository/docker/nrypri001docker/tfcpu1p9
 
+
 ## Parameters for DCIS segmentation
 
 #exp_dir-> checkpoint_path                        
