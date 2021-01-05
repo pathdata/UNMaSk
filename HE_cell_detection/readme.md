@@ -2,7 +2,7 @@
 
 This pipeline will detect cell from the given tiles using trained distance regularized dense inception network.
 
-### Docker Container
+### Docker container
 docker://nrypri001docker/tf:tsv1
 
 ### Publicly accessible weblink
