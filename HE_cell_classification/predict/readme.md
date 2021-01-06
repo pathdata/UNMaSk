@@ -39,6 +39,6 @@ https://hub.docker.com/r/nrypri001docker/tfcpu
 #file_name_pattern -> *.svs(WSI slide extension obtained from the prefix or extension suffix)
 
 ##### Note
-Please cite the article if the code is used completely or partially in your work.
+Kindly cite the article if the code is used completely or partially in your work.
 
 
