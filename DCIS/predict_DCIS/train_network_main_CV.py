@@ -6,7 +6,7 @@ from dcis_segmentation import train
 
 
 if __name__ == '__main__':
-    opts = NetworkOptions.NetworkOptions(exp_dir=os.path.normpath(os.path.join(os.getcwd(), r'ExpDir_DCIS_CV1_ADM_10E')),
+    opts = NetworkOptions.NetworkOptions(exp_dir=os.path.normpath(os.path.join(os.getcwd(), r'ExpDir-CV1')),
                                          num_examples_per_epoch_train=1,
                                          num_examples_per_epoch_valid=1,
                                          image_height=600,
