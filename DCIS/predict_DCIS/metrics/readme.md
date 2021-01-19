@@ -2,6 +2,12 @@
 
 #### Command line arguments
 
+--------------------------------------------------------------------------------------------------------------------------
+
+``` python evaluate_segmentation.py ```
+
+--------------------------------------------------------------------------------------------------------------------------
+
 #### Reference
 
 [1] Kumar, Neeraj, Ruchika Verma, Sanuj Sharma, Surabhi Bhargava, Abhishek Vahadane, and Amit Sethi. "A dataset and a technique for generalized nuclear segmentation for computational pathology." IEEE transactions on medical imaging 36, no. 7 (2017): 1550-1560.     
