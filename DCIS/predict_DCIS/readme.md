@@ -2,9 +2,14 @@
 
 This pipeline will segment DCIS from the tiled image or a given ROI with a image size greater than 508x508. Default image size of tiled images used is 2000x2000
 
-### Docker container
+### CPU Docker image/container
 
 https://hub.docker.com/repository/docker/nrypri001docker/tfcpu1p9
+
+### GPU Docker image
+
+https://hub.docker.com/repository/docker/nrypri001docker/tfdcis_gpu
+
 
 
 
