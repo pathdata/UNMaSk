@@ -7,7 +7,7 @@ import scipy.io as sio
 import time
 from datetime import datetime
 import cv2
-import 
+import math
 
 from dcis_segmentation.subpackages import Patches
 
@@ -84,7 +84,7 @@ def clean_artifact(cws_img, image_path_full):
 
     chan = cv2.split(od_norm)
 
-    grey_mask = (chan[0] + chan[1] + chan[2]) >= (.cos(grey_angle) * cv2.sqrt(3)[0])
+    grey_mask = (chan[0] + chan[1] + chan[2]) >= (math.cos(grey_angle) * cv2.sqrt(3)[0])
 
     other_colour_mask = (chan[2] > chan[1]) | (chan[0] > chan[1])
 
