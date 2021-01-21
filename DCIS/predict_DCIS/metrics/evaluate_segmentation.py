@@ -1,7 +1,8 @@
 import numpy as np
 import os
 import cv2
-import matplotlib.pyplot as plt
+import pandas as pd
+#import matplotlib.pyplot as plt
 
 def check_size(eval_segm, gt_segm):
     h_e, w_e = segm_size(eval_segm)
@@ -141,19 +142,21 @@ if __name__ == '__main__':
 
     params = {
 
-    'gt_file_path': r'D:\April2018\Evaluation_DCIS\DCIS_Manual_mask',
-    'pred_file_path':r'D:\April2018\Evaluation_DCIS\DCIS_Auto1'   
+    'gt_file_path': r'E:\EVAL\GT-mask',
+    'pred_file_path':r'E:\EVAL\pd_mask'
     }
 
     pred_file_path = params['pred_file_path']
 
     gt_file_path = params['gt_file_path']
 
+    eval_score = pd.DataFrame(columns=['slidename', 'pixel_accuracy', 'dice'])
+
     for pred_img in os.listdir(pred_file_path):
 
-        eval_segm = cv2.imread(os.path.join(pred_file_path, pred_img), 0)
+        eval_segm = cv2.imread(os.path.join(pred_file_path, os.path.splitext(pred_img)[0]+'.png'), 0)
 
-        gt_segm = cv2.imread(os.path.join(gt_file_path, pred_img), 0)
+        gt_segm = cv2.imread(os.path.join(gt_file_path, os.path.splitext(pred_img)[0]+'.jpg'), 0)
 
         if np.amax(eval_segm) > 1:
             eval_segm[eval_segm < 127] = 0
@@ -171,4 +174,8 @@ if __name__ == '__main__':
         dice1 = get_dice_traditional(gt, pd)
         dice2 = get_dice_modified(gt, pd)
         PQ = Panoptic_quality(gt, pd)
-        print(pix_acc,dice1,dice2,PQ)
+        print(pred_img,pix_acc,dice1,dice2,PQ)
+        eval_score.columns = ['slidename', 'pixel_accuracy', 'dice']
+        eval_score = eval_score.append({'slidename': pred_img, 'pixel_accuracy': pix_acc, 'dice': dice2}, ignore_index=True)
+    eval_score.to_csv('E:\\EVAL\\Eval_Score_test.csv',
+                 encoding='utf-8', index=False)
