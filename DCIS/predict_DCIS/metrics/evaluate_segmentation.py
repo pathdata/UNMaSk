@@ -174,7 +174,7 @@ if __name__ == '__main__':
         dice1 = get_dice_traditional(gt, pd)
         dice2 = get_dice_modified(gt, pd)
         PQ = Panoptic_quality(gt, pd)
-        print(pred_img,pix_acc,dice1,dice2,PQ)
+        
         eval_score.columns = ['slidename', 'pixel_accuracy', 'dice']
         eval_score = eval_score.append({'slidename': pred_img, 'pixel_accuracy': pix_acc, 'dice': dice2}, ignore_index=True)
     eval_score.to_csv('E:\\EVAL\\Eval_Score_test.csv',
