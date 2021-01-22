@@ -4,9 +4,36 @@
 
 --------------------------------------------------------------------------------------------------------------------------
 
-``` python evaluate_segmentation.py ```
+```  evaluate_segmentation.py ```
 
 --------------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML Table Header</title>
+   </head>
+	
+   <body>
+      <table border = "1">
+         <tr>
+            <th>Name</th>
+            <th>Salary</th>
+         </tr>
+         <tr>
+            <td>Ramesh Raman</td>
+            <td>5000</td>
+         </tr>
+         
+         <tr>
+            <td>Shabbir Hussein</td>
+            <td>7000</td>
+         </tr>
+      </table>
+   </body>
+   
+</html>
 
 #### Reference
 
