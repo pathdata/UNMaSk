@@ -142,8 +142,8 @@ if __name__ == '__main__':
 
     params = {
 
-    'gt_file_path': r'E:\EVAL\GT-mask',
-    'pred_file_path':r'E:\EVAL\pd_mask'
+    'gt_file_path': r'E:\EVAL\gt',
+    'pred_file_path':r'E:\EVAL\pd'
     }
 
     pred_file_path = params['pred_file_path']
