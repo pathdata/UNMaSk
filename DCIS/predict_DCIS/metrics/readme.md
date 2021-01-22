@@ -18,17 +18,20 @@
    <body>
       <table border = "1">
          <tr>
-            <th>Name</th>
-            <th>Salary</th>
+            <th>slidename</th>
+            <th>Pixel accuracy</th>
+		<th>Dice</th>
          </tr>
          <tr>
-            <td>Ramesh Raman</td>
-            <td>5000</td>
+            <td>Da128.png</td>
+            <td>0.99363705</td>
+		 <td> 0.925879503</td>
          </tr>
          
          <tr>
-            <td>Shabbir Hussein</td>
-            <td>7000</td>
+            <td>Da292.png</td>
+            <td>0.986709691</td>
+	    <td> 0.837871618</td>
          </tr>
       </table>
    </body>
