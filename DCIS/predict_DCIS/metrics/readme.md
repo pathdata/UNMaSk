@@ -12,7 +12,7 @@
 <html>
 
    <head>
-      <title>Evaluation metrics</title>
+      Evaluation metrics
    </head>
 	
    <body>
