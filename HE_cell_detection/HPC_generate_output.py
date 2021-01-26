@@ -312,6 +312,7 @@ class DetectCells(object):
             file_names_list_list.append(x)
 
         print('{} processes created.'.format(self.num_processes))
+        
         # create list of processes
         processes = [
             mp.Process(target=self.eval_tiles, args=(file_names_list_list[process_num], process_num)) for
