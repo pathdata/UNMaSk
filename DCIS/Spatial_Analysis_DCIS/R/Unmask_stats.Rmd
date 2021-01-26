@@ -22,9 +22,9 @@ dir.create("figures")
 ```
 
 ```{r dataset}
-library(ggpubr)
-library(ggplot2)
-library(gridExtra)
+(ggpubr)
+(ggplot2)
+(gridExtra)
 t=read.csv("Dave_validData_Fig4_data.csv")
 
 p1 <- ggscatter(t,x="B.sz.IHC",y="A.sz.HE", add="reg.line",conf.int=TRUE,cor.coef = TRUE,cor.method = "spearman",xlab="Biological DCIS estimation",ylab="Automated DCIS estimation")
@@ -43,9 +43,7 @@ We evaluated the quantitative number, ratio and DCIS colocalisation using CD4, C
 
 You can also embed plots, for example:
 
-```{r p3, echo=TRUE}
 
-```
 
 ```{r comparison}
 
