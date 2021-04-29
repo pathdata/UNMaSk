@@ -41,8 +41,8 @@ def plot_training_curves(output_dir, H, epochs):
     plt.style.use("seaborn-white")
     plt.figure()
     plt.subplot(211)
-    plt.plot(H.["loss"], label="train_loss")
-    plt.plot(H.["val_loss"], label="val_loss")
+    plt.plot(H.history["loss"], label="train_loss")
+    plt.plot(H.history["val_loss"], label="val_loss")
     plt.title("Training/Validation Network")
     plt.xlabel("Epochs")
     plt.ylabel("Loss")
@@ -50,8 +50,8 @@ def plot_training_curves(output_dir, H, epochs):
 
 
     plt.subplot(212)
-    plt.plot(H.["acc"], label="train_accuracy")
-    plt.plot(H.["val_acc"], label="val_accuracy")
+    plt.plot(H.history["acc"], label="train_accuracy")
+    plt.plot(H.history["val_acc"], label="val_accuracy")
     # plt.title("Training/Validation Network")
     plt.xlabel("Epochs")
     plt.ylabel("Accuracy")
